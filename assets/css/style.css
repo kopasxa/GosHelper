@@ -24,6 +24,15 @@ body .btn.focus, body .btn:focus {
   outline: none;
 }
 
+.tdn {
+  text-decoration: none !important;
+}
+
+.bbn {
+  border: none !important;
+  padding: 0 !important;
+}
+
 .h1 {
   font-size: 36px;
   font-weight: bold;
@@ -77,9 +86,13 @@ body .btn.focus, body .btn:focus {
   font-weight: bold;
 }
 
+#firstScreens #first .container {
+  position: relative;
+}
+
 #firstScreens #first .imgScreen1 {
   position: absolute;
-  right: 293px;
+  right: -118px;
 }
 
 #firstScreens #first .offer {
@@ -208,8 +221,16 @@ body .btn.focus, body .btn:focus {
   margin-bottom: 70px;
 }
 
+#srceens3-4 #thirty .groupInfo .arrow {
+  position: absolute;
+  z-index: -1;
+  right: -52px;
+  top: 18px;
+}
+
 #srceens3-4 #thirty .groupInfo .cardinfo {
   min-height: 360px;
+  position: relative;
 }
 
 #srceens3-4 #thirty .groupInfo .cardinfo .overwrap {
@@ -509,26 +530,75 @@ footer .container nav li a:hover {
 }
 
 /** Modals **/
-#signIn {
+.modal {
   border: none;
 }
 
-#signIn .modal-content {
+.modal .modal-dialog {
+  max-width: 750px;
+}
+
+.modal .modal-dialog .modal-content {
   -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
           box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
   border-radius: 16px;
-  padding: 40px 62px;
+  padding: 80px 125px;
 }
 
-#signIn .modal-content .modal-body input {
+.modal .modal-dialog .modal-content .modal-body form input {
   height: 54px;
+  background: #F2F5FF;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  padding: 13px 26px;
+  color: #5a5970;
 }
 
-#signIn .modal-content * {
+.modal .modal-dialog .modal-content .modal-body form input.login {
+  background-image: url("../img/user.png");
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+
+.modal .modal-dialog .modal-content .modal-body form input.pass {
+  background-image: url("../img/noView.png");
+  background-repeat: no-repeat;
+  background-position: 96%;
+}
+
+.modal .modal-dialog .modal-content .modal-body form a.forget {
+  font-size: 15px;
+  color: #3f80ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 12px 0 30px 0;
+  font-weight: bold;
+}
+
+.modal .modal-dialog .modal-content .modal-body form .btnSignIn {
+  background-color: #3f80ec;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 18px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .modal-dialog .modal-content .modal-body, .modal .modal-dialog .modal-content .modal-header, .modal .modal-dialog .modal-content .modal-footer {
   border: none;
 }
 
-#signIn .modal-content .modal-title {
+.modal .modal-dialog .modal-content .modal-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -539,7 +609,7 @@ footer .container nav li a:hover {
   display: flex;
 }
 
-#signIn .close {
+.modal .modal-dialog .close {
   top: -22px;
   padding: 10px 15px;
   background-color: #3f80ec;
@@ -549,5 +619,27 @@ footer .container nav li a:hover {
   right: -22px;
   position: absolute;
   opacity: 1;
+}
+
+.modal .modal-dialog .close:focus {
+  outline: none;
+}
+
+.modal .modal-dialog .modal-footer .soc {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(138, 142, 171, 0.3);
+}
+
+.modal .modal-dialog .modal-footer p {
+  font-size: 15px;
+  color: #5A5970;
+}
+
+.modal .modal-dialog .modal-footer p a {
+  color: #3f80ec;
+  text-decoration: underline;
+  margin-left: 3px;
+  font-weight: bold;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

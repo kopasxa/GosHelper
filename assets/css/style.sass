@@ -15,6 +15,13 @@ body
 * 
     outline: none
 
+.tdn 
+    text-decoration: none !important
+
+.bbn 
+    border: none !important
+    padding: 0 !important
+
 .h1
     font-size: 36px
     font-weight: bold
@@ -51,9 +58,11 @@ body
             background: transparent
             color: white
             font-weight: bold
+        .container 
+            position: relative
         .imgScreen1 
-            position: absolute;
-            right: 293px;
+            position: absolute
+            right: -118px
         .offer 
             color: white
             margin-top: 130px
@@ -133,8 +142,14 @@ body
             margin-top: 140px
             margin-bottom: 70px
         .groupInfo 
+            .arrow 
+                position: absolute
+                z-index: -1
+                right: -52px
+                top: 18px
             .cardinfo
                 min-height: 360px
+                position: relative
                 .overwrap 
                     height: 210px
                     display: flex
@@ -322,29 +337,76 @@ footer
 
 /** Modals **/ 
 
-#signIn 
+.modal
     border: none
-    .modal-content
-        box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
-        border-radius: 16px 
-        padding: 40px 62px 
-        .modal-body 
-            input 
-                height: 54px
-        *
-            border: none
-        .modal-title  
-            justify-content: center
-            font-size: 30px 
-            font-weight: bold
-            display: flex
-    .close 
-        top: -22px
-        padding: 10px 15px
-        background-color: rgba(63, 128, 236, 1)
-        color: white 
-        font-weight: normal
-        border-radius: 50%
-        right: -22px
-        position: absolute
-        opacity: 1
+    .modal-dialog
+        max-width: 750px
+        .modal-content
+            box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+            border-radius: 16px 
+            padding: 80px 125px 
+            .modal-body 
+                form
+                    input 
+                        height: 54px
+                        background: #F2F5FF
+                        border-radius: 5px
+                        border: none
+                        margin-top: 15px
+                        padding: 13px 26px
+                        color: rgba(90, 89, 112, 1)
+                    input.login
+                        background-image: url("../img/user.png")
+                        background-repeat: no-repeat
+                        background-position: 96%
+                    input.pass
+                        background-image: url("../img/noView.png")
+                        background-repeat: no-repeat
+                        background-position: 96%  
+                    a.forget 
+                        font-size: 15px 
+                        color: rgba(63, 128, 236, 1)
+                        display: flex
+                        justify-content: flex-end
+                        margin: 12px 0 30px 0
+                        font-weight: bold
+                    .btnSignIn 
+                        background-color: rgba(63, 128, 236, 1)
+                        color: white 
+                        border-radius: 5px
+                        font-weight: bold
+                        padding: 18px 100px
+                        display: flex
+                        justify-content: center
+            .modal-body, .modal-header, .modal-footer
+                border: none
+            .modal-title  
+                justify-content: center
+                font-size: 30px 
+                font-weight: bold
+                display: flex
+        .close 
+            top: -22px
+            padding: 10px 15px
+            background-color: rgba(63, 128, 236, 1)
+            color: white 
+            font-weight: normal
+            border-radius: 50%
+            right: -22px
+            position: absolute
+            opacity: 1
+        .close:focus 
+            outline: none
+        .modal-footer 
+            .soc 
+                padding-bottom: 25px
+                border-bottom: 1px solid rgba(138, 142, 171, .3)
+            p 
+                font-size: 15px 
+                color: #5A5970
+                a 
+                    color:  rgba(63, 128, 236, 1)
+                    text-decoration: underline
+                    margin-left: 3px
+                    font-weight: bold
+                    cursor: pointer
