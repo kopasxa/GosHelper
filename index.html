@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Госпомощник - Главная</title>
+</head>
+
+<body>
+    <section id="firstScreens">
+        <section id="first">
+            <header>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg col-12 pt-4">
+                        <a class="navbar-brand" href="#"><img src="assets/img/logoMainPage.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto justify-content-around col-6 ml-5">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">О сервисе</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Дневник госпомощника</a>
+                                </li>
+                            </ul>
+                            <button class="btn btnSign" data-toggle="modal" data-target="#signIn">Вход</button>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="container">
+                <img class="imgScreen1" src="assets/img/imgMainPageScreen1.png" alt="">
+                <div class="offer col-6">
+                    <p>Онлайн-сервис Госпомощник</p>
+                    <h1 class="h1">
+                        Получите полный список положенных вам МСЗ
+                        от государства
+                        в одном месте
+                    </h1>
+                    <button class="btn btnGet">
+                        Получить
+                    </button>
+                    <p class="offerDesc">*МСЗ — мера соц. защиты</p>
+                </div>
+            </div>
+        </section>
+        <section id="second">
+            <div class="container">
+                <div class="useful col-12">
+                    <h1 class="h1">
+                        Кому полезен Госпомощник
+                    </h1>
+                    <p class="desc">
+                        Ежедневно миллионы граждан тратят десятки и сотни часов на поиск информации о том, что им
+                        полагается от государства, оббивают пороги инстанций, и часто это не приводит к результату. Мы
+                        собрали все ответы в одном месте, чтобы вы могли путем онлайн-тестирования получить их не выходя
+                        из дома.
+                    </p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link btn activate mr-2" id="home-tab" data-toggle="tab" href="#home"
+                                role="tab" aria-controls="home" aria-selected="true">Социальные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Не социальные</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card-group">
+                                <div class="row w-100">
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardFamily.png"
+                                                    width="67" alt="">
+                                                <p class="justify-content-center">Семья</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardMilitary.png"
+                                                    width="105" alt="">
+                                                <p class="justify-content-center">Военнослужащие</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardPensioners.png"
+                                                    width="137" alt="">
+                                                <p class="justify-content-center">Пенсионеры</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row w-100 mt-4">
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardInvalid.png"
+                                                    width="106" alt="">
+                                                <p class="justify-content-center">Инвалиды</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 hovers hovers2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardOther.png"
+                                                    width="160" alt="">
+                                                <p class="justify-content-center">Иное</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="card-group">
+                                <div class="row w-100">
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardPhis.png"
+                                                    width="67" alt="">
+                                                <p class="justify-content-center">Физ. лица</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardIp.png"
+                                                    width="105" alt="">
+                                                <p class="justify-content-center">ИП</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 hovers">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <img class="card-img-top" src="assets/img/imgMainPageCardUr.png"
+                                                    width="137" alt="">
+                                                <p class="justify-content-center">Юр.лица</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="srceens3-4">
+        <section id="thirty">
+            <div class="container">
+                <div class="infoScreen">
+                    <h1 class="h1">
+                        Как получить информацию
+                    </h1>
+                    <div class="groupInfo d-flex align-items-center">
+                        <div class="col-4">
+                            <div class="cardInfo1 cardinfo">
+                                <div class="overwrap"><img src="assets/img/imgMainPageCardInfa1.png" alt=""></div>
+                                <h5>Пройдите первичное
+                                    тестирование</h5>
+                                <p>Выберите подходящую категорию,
+                                    пройдя первичное тестирование</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cardInfo2 cardinfo">
+                                <div class="overwrap"><img src="assets/img/imgMainPageCardInfa2.png" alt=""></div>
+                                <h5>Оплатите
+                                    и авторизуйтесь</h5>
+                                <p>Подберите и оплатите подходящее решение</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cardInfo3 cardinfo">
+                                <div class="overwrap"><img src="assets/img/imgMainPageCardInfa3.png" alt=""></div>
+                                <h5>Получите полный список полагающегося вам от государства</h5>
+                                <p>Пройдите тестирование в личном кабинете
+                                    и скачайте результаты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alreadyWorking">
+                    <h1 class="h1">
+                        Кто уже с нами работает
+                    </h1>
+                    <div class="groupCard">
+                        <div class="row">
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking1.png" alt=""></div>
+                            </div>
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking2.png" width="91" alt=""></div>
+                            </div>
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking3.png" width="86" alt=""></div>
+                            </div>
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking4.png" width="91" alt=""></div>
+                            </div>
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking5.png" alt=""></div>
+                            </div>
+                            <div class="col-2 hovers">
+                                <div class="card"><img src="assets/img/imtAlreadyWorking6.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fourty">
+            <div class="container">
+                <h1 class="h1">
+                    Что вы получите, используя Госпомощник
+                </h1>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <div class="leftBlock">
+                            <p class="mb-5">Since wire-frame renderings are relatively simple and fast to calculate</p>
+                            <img src="assets/img/imgScreen4BigImageLeft.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="rightBlock">
+                            <div class="col-6 d-flex">
+                                <div class="col-12">
+                                    <div class="cardOther">
+                                        <img src="assets/img/calc.png" width="70" height="70" alt="">
+                                        <h5>Все в одном месте</h5>
+                                        <p>Больше не нужно перерывать тонну сайтов
+                                            и статей в интернете</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cardOther">
+                                        <img src="assets/img/time.png" width="70" height="70" alt="">
+                                        <h5>Оперативность</h5>
+                                        <p>Потрать полчаса вместо
+                                            километров очередей</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex mt-5">
+                                <div class="col-12">
+                                    <div class="cardOther">
+                                        <img src="assets/img/lock.png" width="70" height="70" alt="">
+                                        <h5>Актуальность законодательству</h5>
+                                        <p>Мы регулярно обновляем нашу информационную базу, когда
+                                            выходят поправки в законодательстве</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="cardOther">
+                                        <img src="assets/img/vesu.png" width="70" height="70" alt="">
+                                        <h5>Конфиденциальность</h5>
+                                        <p>Наш сайт надежно защищен,
+                                            ваши данные никто не украдет</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="screens5-7">
+        <section id="fifth">
+            <div class="container">
+                <h1 class="h1">
+                    Частые вопросы
+                </h1>
+                <div class="cardGroup mt-5">
+                    <div class="row">
+                        <div class="col-6 hovers">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="circle">
+                                        <p>?</p>
+                                    </div>
+                                    <h5>Все соответствует
+                                        законодательству?</h5>
+                                </div>
+                                <p>Да, наша команда юристов регулярно обновляет базу
+                                    в связи с обновлениями законопроектов и различных программ</p>
+                            </div>
+                        </div>
+                        <div class="col-6 hovers">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="circle">
+                                        <p>?</p>
+                                    </div>
+                                    <h5>Все соответствует законодательству?</h5>
+                                </div>
+                                <p>Да, наша команда юристов регулярно обновляет базу
+                                    в связи с обновлениями законопроектов и различных программ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6 hovers">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="circle">
+                                        <p>?</p>
+                                    </div>
+                                    <h5>Все соответствует законодательству?</h5>
+                                </div>
+                                <p>Да, наша команда юристов регулярно обновляет базу
+                                    в связи с обновлениями законопроектов и различных программ</p>
+                            </div>
+                        </div>
+                        <div class="col-6 hovers">
+                            <div class="card">
+                                <div class="top">
+                                    <div class="circle">
+                                        <p>?</p>
+                                    </div>
+                                    <h5>Все соответствует законодательству?</h5>
+                                </div>
+                                <p>Да, наша команда юристов регулярно обновляет базу
+                                    в связи с обновлениями законопроектов и различных программ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <button class="btn bntSeeMore" href="#">Смотреть все</button>
+                </center>
+            </div>
+        </section>
+        <section id="sixth">
+            <div class="container">
+                <h1 class="h1">
+                    Дневник госпомощника
+                </h1>
+                <div class="cardGroup mt-5">
+                    <div class="row">
+                        <div class="col-4 hovers">
+                            <div class="card">
+                                <img src="assets/img/articleimg1.png" alt="" class="card-img-top">
+                                <div class="padding">
+                                    <h5>Статья из блога</h5>
+                                    <p>Another difficulty with wireframes is that they don’t effectively display
+                                        interactive details because they are static representations. а</p>
+                                    <div class="card-footer d-flex">
+                                        <div class="views d-flex align-items-end mr-3">
+                                            <p class="m-0">
+                                                <img src="assets/img/views.png" alt="">
+                                                239
+                                            </p>
+                                        </div>
+                                        <div class="comments d-flex align-items-end">
+                                            <p class="m-0">
+                                                <img src="assets/img/comments.png" alt="">
+                                                52
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 hovers">
+                            <div class="card">
+                                <img src="assets/img/articleimg2.png" alt="" class="card-img-top">
+                                <div class="padding">
+                                    <h5>Статья из блога</h5>
+                                    <p>Another difficulty with wireframes is that they don’t effectively display
+                                        interactive details because they are static representations. а</p>
+                                    <div class="card-footer d-flex">
+                                        <div class="views d-flex align-items-end mr-3">
+                                            <p class="m-0">
+                                                <img src="assets/img/views.png" alt="">
+                                                239
+                                            </p>
+                                        </div>
+                                        <div class="comments d-flex align-items-end">
+                                            <p class="m-0">
+                                                <img src="assets/img/comments.png" alt="">
+                                                52
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 hovers">
+                            <div class="card">
+                                <img src="assets/img/articleimg3.png" alt="" class="card-img-top">
+                                <div class="padding">
+                                    <h5>Статья из блога</h5>
+                                    <p>Another difficulty with wireframes is that they don’t effectively display
+                                        interactive details because they are static representations. а</p>
+                                    <div class="card-footer d-flex">
+                                        <div class="views d-flex align-items-end mr-3">
+                                            <p class="m-0">
+                                                <img src="assets/img/views.png" alt="">
+                                                239
+                                            </p>
+                                        </div>
+                                        <div class="comments d-flex align-items-end">
+                                            <p class="m-0">
+                                                <img src="assets/img/comments.png" alt="">
+                                                52
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <button class="btn btnMorePosts" href="#">Больше статей</button>
+                </center>
+            </div>
+        </section>
+        <section id="seventh">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                       <div class="leftBlock">
+                            <h1 class="h1">
+                                Подпишитесь, чтобы получать 
+                                актуальные изменения 
+                                в законодательстве
+                            </h1>
+                            <form class="mt-5" action="">
+                                <input type="text" placeholder="Ваша почта">
+                                <input type="button" value="Подписаться">
+                                <p class="mt-3">Нажимая на кнопку, я соглашаюсь на обработку <u>персональных данных</u></p>
+                            </form>
+                       </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="assets/img/mail.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg col-12 pt-4">
+                <a class="navbar-brand" href="#"><img src="assets/img/logoMainPage.png" alt=""></a>
+                <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto justify-content-between col-8 ml-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">О сервисе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Дневник госпомощника</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                    <div class="social col-3 d-flex justify-content-around">
+                        <a href="#" class="soc"><img src="assets/img/Twitter.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/Facebook.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/Google.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/instagram.png" alt=""></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <!-- **** Modals **** -->
+
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"  role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <div class="modal-header d-flex justify-content-center">
+              <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+            </div>
+            <div class="modal-body">
+                <input type="text" value="login" placeholder="Введите адрес электронной почты или телефон" class="w-100">
+                <input type="password" value="pass" placeholder="Введите ваш пароль" class="w-100">
+                <a href="#" class="forget">Забыли пароль?</a>
+                <button class="btn btnSignIn">Войти</button>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
