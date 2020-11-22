@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Госпомощник - Дневник госпомощника</title>
+</head>
+
+<body>
+    <section id="assistant" class="searchpage">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg col-12 pt-4">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo(v2).png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse text-white justify-content-between ml-5"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto justify-content-around col-6 ml-5">
+                            <li class="nav-item">
+                                <a class="nav-link btn" href="about.html">О сервисе</a>
+                            </li>
+                            <li class="nav-item ml-3 active">
+                                <a class="nav-link btn" href="assistantdiary.html">Дневник госпомощника</a>
+                            </li>
+                        </ul>
+                        <button class="btn btnSign" data-toggle="modal" data-target="#signIn">Вход</button>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="search">
+            <div class="container">
+                <p class="page">
+                    <span>Главная </span> > <span>Дневник госпомощника</span> > <span>Семья</span>
+                </p>
+                <div class="row">
+                    <div class="leftBlock col-4">
+                        <div class="groupCard">
+                            <div class="card w-100">
+                                <h5 class="w-100 card-header">Семьи</h5>
+                                <ul class="d-flex flex-column flex-wrap p-0 mt-3 m-0">
+                                    <li class="active"><a href="#">Многодетные</a></li>
+                                    <li><a href="#">Матери-одиночки</a></li>
+                                    <li><a href="#">Молодые</a></li>
+                                    <li><a href="#">Малоимущие</a></li>
+                                    <li><a href="#">Алименты</a></li>
+                                    <li><a href="#">Отцы-одиночки</a></li>
+                                </ul>
+                            </div>
+                            <div class="card w-100 mt-4">
+                                <h5 class="w-100 card-header">Дети</h5>
+                                <ul class="d-flex flex-column flex-wrap p-0 mt-3 m-0">
+                                    <li class=""><a href="#">Многодетные</a></li>
+                                    <li><a href="#">Матери-одиночки</a></li>
+                                    <li><a href="#">Молодые</a></li>
+                                    <li><a href="#">Малоимущие</a></li>
+                                    <li><a href="#">Алименты</a></li>
+                                    <li><a href="#">Отцы-одиночки</a></li>
+                                </ul>
+                            </div>
+                            <div class="card w-100 mt-4">
+                                <h5 class="w-100 card-header">Инвалиды</h5>
+                                <ul class="d-flex flex-column flex-wrap p-0 mt-3 m-0">
+                                    <li class=""><a href="#">Многодетные</a></li>
+                                    <li><a href="#">Матери-одиночки</a></li>
+                                    <li><a href="#">Молодые</a></li>
+                                    <li><a href="#">Малоимущие</a></li>
+                                    <li><a href="#">Алименты</a></li>
+                                    <li><a href="#">Отцы-одиночки</a></li>
+                                </ul>
+                            </div>
+                            <div class="card w-100 mt-4">
+                                <h5 class="w-100 card-header">Военные</h5>
+                                <ul class="d-flex flex-column flex-wrap p-0 mt-3 m-0">
+                                    <li class=""><a href="#">Многодетные</a></li>
+                                    <li><a href="#">Матери-одиночки</a></li>
+                                    <li><a href="#">Молодые</a></li>
+                                    <li><a href="#">Малоимущие</a></li>
+                                    <li><a href="#">Алименты</a></li>
+                                    <li><a href="#">Отцы-одиночки</a></li>
+                                </ul>
+                            </div>
+                            <div class="card w-100 mt-4">
+                                <h5 class="w-100 card-header">Иное</h5>
+                                <ul class="d-flex flex-column flex-wrap p-0 mt-3 m-0">
+                                    <li class=""><a href="#">Многодетные</a></li>
+                                    <li><a href="#">Матери-одиночки</a></li>
+                                    <li><a href="#">Молодые</a></li>
+                                    <li><a href="#">Малоимущие</a></li>
+                                    <li><a href="#">Алименты</a></li>
+                                    <li><a href="#">Отцы-одиночки</a></li>
+                                </ul>
+                            </div>
+
+                            <h5 class="h5">Свежие статьи</h5>
+
+                            <a href="#">
+                                <div class="card w-100 article mt-3">
+                                    <p class="m-0">Получите полный список полагающегося вам от государства</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card w-100 article mt-3">
+                                    <p class="m-0">Получите полный список полагающегося вам от государства</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card w-100 article mt-3">
+                                    <p class="m-0">Получите полный список полагающегося вам от государства</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="card w-100 article mt-3">
+                                    <p class="m-0">Получите полный список полагающегося вам от государства</p>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="AdBlock d-flex justify-content-center align-items-center">
+                            <p>Баннер</p>
+                        </div>
+                    </div>
+                    <div class="rightBlock col-8 p-0">
+                        <h1 class="h1 mb-4">Социальная помощь многодетным семьям</h1>
+                        <img src="assets/img/imageAssistantFamily.png" class="mt-3" alt="">
+                        <p class="mt-5">Многодетные семьи являются социально защищаемыми в России. Они имеют особое
+                            положение в обществе и пользуются поддержкой государства. В наших статьях вы также можете
+                            узнать детальные подробности вопросов, касающихся многодетности в РФ. У нас освещены такие
+                            темы, как:
+                            <br> Источник: https://lgoty-vsem.ru/semi/mnogodetnye</p>
+                        <h5 class="top-60">Правовой статус многодетных граждан</h5>
+                        <p class="mt-4">Поясняется и детализируется положение многодетных семей в обществе, имеющиеся
+                            у них льготы и социальные преимущества:</p>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Оформление статуса многодетной семьи</li>
+                            <li><i class="fa fa-check"></i>Льготы и привилегии многодетных семей</li>
+                            <li><i class="fa fa-check"></i>Льготы для многодетного отца</li>
+                            <li><i class="fa fa-check"></i>Льготы и права многодетных на работе</li>
+                            <li><i class="fa fa-check"></i>Льготы при поступлении в ВУЗ</li>
+                            <li><i class="fa fa-check"></i>Льготы на коммунальные услуги</li>
+                            <li><i class="fa fa-check"></i>Льготы при рождении третьего ребенка</li>
+                            <li><i class="fa fa-check"></i>Налоговые льготы многодетным</li>
+                            <li><i class="fa fa-check"></i>Льготы и скидки на посещение цирка</li>
+                            <li><i class="fa fa-check"></i>Право и выход на досрочную пенсию</li>
+                        </ul>
+                        <h5 class="top-60">Денежно-кредитная политика</h5>
+                        <p class="mt-4">Описываются программы государственного участия в финансовом обеспечении
+                            многодетных граждан и оказания им помощи в получении займов:</p>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Денежные выплаты и пособия</li>
+                            <li><i class="fa fa-check"></i>Льготная ипотека для многодетных семей</li>
+                            <li><i class="fa fa-check"></i>Льготные кредиты многодетным семьям</li>
+                        </ul>
+                        <h5 class="top-60">Помощь от государства</h5>
+                        <p class="mt-4">Перечисляются виды натуральной помощи многодетным от государства и материального
+                            содействия государственных структур в приобретение семьями с большим числом детей некоторых
+                            социальных благ:</p>
+                        <ul>
+                            <li><i class="fa fa-check"></i>Денежные выплаты и пособия</li>
+                            <li><i class="fa fa-check"></i>Льготная ипотека для многодетных семей</li>
+                            <li><i class="fa fa-check"></i>Льготные кредиты многодетным семьям</li>
+                        </ul>
+                        <h5 class="news">Новости</h5>
+                        <div class="groupCard mt-4">
+                            <div class="col-12 hovers p-0">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsimg1.png" alt="">
+                                        <div class="card-body">
+                                            <p class="date">21 сентября</p>
+                                            <h6>Одобрен законопроект о компенсации ипотечного займа
+                                                многодетным семьям</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 hovers p-0 mt-3">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsimg2.png" alt="">
+                                        <div class="card-body">
+                                            <p class="date">21 сентября</p>
+                                            <h6>Одобрен законопроект о компенсации ипотечного займа
+                                                многодетным семьям</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 hovers p-0 mt-3">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsimg3.png" alt="">
+                                        <div class="card-body">
+                                            <p class="date">21 сентября</p>
+                                            <h6>Одобрен законопроект о компенсации ипотечного займа
+                                                многодетным семьям</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 hovers p-0 mt-3">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsimg4.png" alt="">
+                                        <div class="card-body">
+                                            <p class="date">21 сентября</p>
+                                            <h6>Одобрен законопроект о компенсации ипотечного займа
+                                                многодетным семьям</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popularNews">
+            <div class="container">
+                <div class="d-flex align-items-end">
+                    <p class="active right-70 mb-0">Популярное</p>
+                    <p class="new mb-0">Новое</p>
+                </div>
+
+                <div class="groupCard">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle1.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="far fa-heart mr-1"></i>Семья</p>
+                                        <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle5.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="far fa-star mr-1"></i>Военнослужащие</p>
+                                        <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle2.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="fas fa-walking mr-1"></i>Иное</p>
+                                        <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle6.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="fas fa-glasses mr-1"></i>Пенсионеры</p>
+                                        <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle3.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="far fa-heart mr-1"></i>Семья</p>
+                                        <h6>Обслуживание единых транспортных карт Стрелка</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle7.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="fas fa-wheelchair mr-1"></i>Инвалиды</p>
+                                        <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle4.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="fas fa-glasses mr-1"></i>Пенсионеры</p>
+                                        <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card">
+                                <div class="d-flex">
+                                    <img class="card-img-left" src="assets/img/newsArticle8.png" alt="">
+                                    <div class="card-body">
+                                        <p class="category"><i class="far fa-star mr-1"></i>Военнослужащие</p>
+                                        <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="leftBlock">
+                            <h1 class="h1">
+                                Подпишитесь, чтобы получать
+                                актуальные изменения
+                                в законодательстве
+                            </h1>
+                            <form class="mt-5" action="">
+                                <input type="text" placeholder="Ваша почта">
+                                <input type="button" value="Подписаться">
+                                <p class="mt-3">Нажимая на кнопку, я соглашаюсь на обработку <u>персональных
+                                        данных</u>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="assets/img/mail.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg col-12 pt-4">
+                <div class="d-flex flex-column" style="margin-top: 40px;">
+                    <a class="navbar-brand" href="index.html"><img src="assets/img/logoMainPage.png" alt=""></a>
+                    <p class="mt-2" style="opacity: .4; color: white">©2020 Госпомощник</p>
+                </div>
+                <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto justify-content-between col-8 ml-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">О сервисе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assistantdiary.html">Дневник госпомощника</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                    <div class="social col-3 d-flex justify-content-around">
+                        <a href="#" class="soc"><img src="assets/img/Twitter.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/Facebook.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/Google.png" alt=""></a>
+                        <a href="#" class="soc"><img src="assets/img/instagram.png" alt=""></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <!--  Modals  -->
+
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="login" placeholder="Введите адрес электронной почты или телефон"
+                            class="w-100 login">
+                        <input type="password" name="pass" placeholder="Введите ваш пароль" class="w-100 pass">
+                        <a href="#" class="forget">Забыли пароль?</a>
+                        <button class="btn btnSignIn w-100">Войти</button>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex flex-wrap">
+                    <div class="soc d-flex justify-content-around w-100 align-items-center flex-wrap">
+                        <p class="m-0">Войти через соц. сети:</p>
+                        <div class="icons">
+                            <a href="#"><img src="assets/img/formVk.png" alt=""></a>
+                            <a href="#"><img src="assets/img/formOk.png" alt=""></a>
+                            <a href="#"><img src="assets/img/formFace.png" alt=""></a>
+                            <a href="#"><img src="assets/img/formGoogle.png" alt=""></a>
+                            <a href="#"><img src="assets/img/formYa.png" alt=""></a>
+                        </div>
+                    </div>
+                    <p class="w-100 m-0 d-flex mt-3 justify-content-center">Нет аккаунта? <a id="reg"
+                            data-toggle="modal" data-target="#register"> Зарегистрируйтесь</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация аккаунта</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Имя и фамилия" class="w-100">
+                        <input type="phone" name="phone" placeholder="Телефон" class="w-100">
+                        <input type="email" name="email" placeholder="Email" class="w-100">
+                        <input type="text" name="city" placeholder="Город" class="w-100">
+                        <button class="btn btnSignIn mt-4 w-100">Зарегистрироваться</button>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex flex-wrap">
+                    <div class="soc d-flex justify-content-around w-100 align-items-center flex-wrap">
+                        <p class="m-0 text-center" style="color:rgba(138, 142, 171, 1); font-size: 12px">Нажимая кнопку
+                            Зарегистрироваться, я даю согласие с условиями использования сервиса, а также с передачей и
+                            обработкой моих данных</p>
+                    </div>
+                    <p class="w-100 m-0 d-flex mt-3 justify-content-center">Уже есть аккаунт?<a href="#" id="insign"
+                            data-toggle="modal" data-target="#thankYou"> Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thankYou" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Спасибо!</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <p class="text-center">Завершите регистрацию по ссылке в письме,
+                            которое мы отправили на sadad@yandex.ru</p>
+                        <div class="w-100 d-flex justify-content-center"><button
+                                class="btn btnSignIn mt-4">Войти</button></div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex flex-wrap">
+                    <p class="w-100 m-0 d-flex mt-3 justify-content-center"><a href="#" class="tdn" id="phoneReg"
+                            data-toggle="modal" data-target="#registerphone"> Отправить письмо повторно (2:02)</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerphone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация по номеру</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="phone" name="phone" placeholder="Телефон" class="w-100">
+                        <button class="btn btnSignIn mt-4 w-100">Зарегистрироваться</button>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex flex-wrap">
+                    <div class="soc d-flex justify-content-around w-100 align-items-center flex-wrap">
+                        <p class="m-0 text-center" style="color:rgba(138, 142, 171, 1); font-size: 12px">Нажимая кнопку
+                            Зарегистрироваться, я даю согласие с условиями использования сервиса, а также с передачей и
+                            обработкой моих данных</p>
+                    </div>
+                    <p class="w-100 m-0 d-flex mt-3 justify-content-center">Уже есть аккаунт?<a href="#" id="codePhone"
+                            data-toggle="modal" data-target="#phoneCode"> Войти</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="phoneCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header d-flex justify-content-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация по номеру</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="code" placeholder="Код из СМС" class="w-100 border border-danger mb-2">
+                        <span class="text-danger">Неверный код!</span>
+                        <button class="btn btnSignIn mt-4 w-100">Подтвердить</button>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex flex-wrap">
+                    <div class="soc d-flex justify-content-around w-100 align-items-center flex-wrap bbn">
+                        <p class="m-0 text-center " style="color:rgba(138, 142, 171, 1); font-size: 12px">Нажимая
+                            кнопку, я даю согласие с условиями использования сервиса,
+                            а также с передачей и обработкой моих данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script>
+        $('#reg').click(function () {
+            $('#signIn').modal('hide');
+        });
+
+        $('#sign').click(function () {
+            $('#register').modal('hide');
+        });
+
+        $('#insign').click(function () {
+            $('#register').modal('hide');
+        });
+
+        $('#phoneReg').click(function () {
+            $('#thankYou').modal('hide');
+        });
+
+        $('#codePhone').click(function () {
+            $('#registerphone').modal('hide');
+        });
+    </script>
+</body>
+
+</html>
