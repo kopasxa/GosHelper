@@ -28,6 +28,8 @@ body
 
 .card 
     transition: .3s ease-in-out
+    border: none
+    z-index: 1
 
 .card:hover 
     color: rgba(63, 128, 236, 1)
@@ -557,12 +559,7 @@ footer
                             a 
                                 color: rgba(63, 128, 236, 1) 
                 .card:hover 
-                    transform: scale(1)
-                h5.h5 
-                    font-size: 20px 
-                    font-weight: bold
-                    color: rgba(29, 32, 61, 1)
-                    margin-top: 80px
+                    transform: scale(1)    
                 .article 
                     p 
                         color: rgba(90, 89, 112, 1)
@@ -660,6 +657,98 @@ footer
 .top-60 
     margin-top: 60px
 
+.h5 
+    font-size: 20px 
+    font-weight: bold
+    color: rgba(29, 32, 61, 1)
+    margin-top: 80px
+
+.menu 
+    img 
+        object-fit: contain
+    p 
+        font-size: 16px 
+        font-weight: bold
+        color: rgba(29, 32, 61, 1)
+        margin-left: 15px 
+
+
+.color-grey 
+    color: rgba(90, 89, 112, 1)
+    font-size: 16px
+
+#lk 
+    header
+        box-shadow: 0px 4px 50px rgba(70, 70, 70, 0.05)
+        height: 94px
+        nav
+            .rightBlock
+                a 
+                    color: rgba(29, 32, 61, 1)
+                    font-size: 16px
+                    &[aria-expanded="false"] 
+                        i 
+                            transform: rotate(180deg)
+                    &:hover 
+                        text-decoration: none
+                .dropdown-toggle::after 
+                    display: none
+                .profile
+                    margin-left: 60px 
+                .dropdown-menu 
+                    box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                    border-radius: 6px
+                    border: none
+                    top: 122%
+                    left: -18px
+                    a
+                        font-size: 15px 
+                        color: rgba(29, 32, 61, 1)
+                        transition: .3s linear
+                        &:hover
+                            color: rgba(63, 128, 236, 1)
+                            background-color: transparent
+    #screen1
+        h4.path 
+            margin-top: 100px
+            font-size: 22px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+        .bigCard 
+            margin-top: 50px
+            padding: 70px 0
+            box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+            border-radius: 12px
+            .card-header
+                background-color: transparent
+                border: none
+                h3 
+                    font-size: 36px 
+                    font-weight: bold
+                    color: rgba(29, 32, 61, 1)
+            .card-body
+                a 
+                    padding: 21px 50px
+                    background-color: rgba(63, 128, 236, 1)
+                    border-radius: 5px
+                    color: white
+                    border: none
+                    font-size: 15px 
+                    font-weight: bold
+                p 
+                    color: rgba(138, 142, 171, 1)   
+                    margin-top: 20px
+    #screen2 
+        h3 
+            margin-top: 140px 
+            font-size: 36px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+        .groupCard 
+            .card 
+                
+
+
 
 /** Modals **/ 
 
@@ -667,18 +756,30 @@ footer
     border: none
     .modal-dialog
         max-width: 750px
+        .modal-header 
+            .description 
+                max-width: 380px
+                margin: 0
         .modal-content
             box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
             border-radius: 16px 
             padding: 80px 125px 
             .modal-body 
+                .loc 
+                    h5 
+                        font-size: 20px 
+                        font-weight: bold
+                        color: rgba(29, 32, 61, 1)
+                    p 
+                        span 
+                            color: rgba(90, 89, 112, 1)
                 form
+                    position: relative
                     input 
                         height: 54px
                         background: #F2F5FF
                         border-radius: 5px
                         border: none
-                        margin-top: 15px
                         padding: 13px 26px
                         color: rgba(90, 89, 112, 1)
                     input.login
@@ -688,7 +789,46 @@ footer
                     input.pass
                         background-image: url("../img/noView.png")
                         background-repeat: no-repeat
-                        background-position: 96%  
+                        background-position: 96%    
+                    .list-group 
+                        display: none
+                    ul#myList 
+                        max-height: 230px
+                        overflow: hidden
+                        background-color: white
+                        li 
+                            border: none
+                    .inputs 
+                        border-radius: 5px
+                        .mCSB_scrollTools 
+                            .mCSB_draggerContainer 
+                                display: flex
+                                align-items: center
+                            .mCSB_draggerRail 
+                                background-color: rgba(138, 142, 171, .3)
+                                align-items: center
+                                height: 90%
+                                width: 1px
+                            .mCSB_dragger 
+                                .mCSB_dragger_bar     
+                                    width: 3px 
+                                    background-color: rgba(63, 128, 236, 1)
+                                    height: 15px
+                    .plusClass 
+                        box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                        border: 1px solid #3F80EC
+                        position: absolute
+                        width: 100%
+                        ::-webkit-scrollbar 
+                            width: 3px
+
+                        ::-webkit-scrollbar-track 
+                            border-radius: 10px
+                        
+                        ::-webkit-scrollbar-thumb 
+                            background: rgba(63, 128, 236, 1)
+                            border-radius: 10px
+
                     a.forget 
                         font-size: 15px 
                         color: rgba(63, 128, 236, 1)
@@ -706,6 +846,11 @@ footer
                         justify-content: center
             .modal-body, .modal-header, .modal-footer
                 border: none
+                .manyally 
+                    color: rgba(63, 128, 236, 1)
+                    font-weight: bold
+                    &:hover 
+                        text-decoration: none
             .modal-title  
                 justify-content: center
                 font-size: 30px 
