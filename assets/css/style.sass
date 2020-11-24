@@ -8,6 +8,7 @@ body
         font-size: 16px
     a:hover 
         color: white
+        text-decoration: none
     .btn.focus, .btn:focus
         box-shadow: none
 
@@ -677,37 +678,104 @@ footer
     color: rgba(90, 89, 112, 1)
     font-size: 16px
 
-#lk 
-    header
-        box-shadow: 0px 4px 50px rgba(70, 70, 70, 0.05)
-        height: 94px
-        nav
-            .rightBlock
-                a 
-                    color: rgba(29, 32, 61, 1)
-                    font-size: 16px
-                    &[aria-expanded="false"] 
-                        i 
-                            transform: rotate(180deg)
-                    &:hover 
-                        text-decoration: none
-                .dropdown-toggle::after 
+header.lk
+    box-shadow: 0px 4px 50px rgba(70, 70, 70, 0.05)
+    height: 94px
+    nav
+        .menu 
+            .dropdown-toggle2 
+                color: rgba(29, 32, 61, 1)
+                &:after 
                     display: none
-                .profile
-                    margin-left: 60px 
-                .dropdown-menu 
-                    box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
-                    border-radius: 6px
-                    border: none
-                    top: 122%
-                    left: -18px
-                    a
-                        font-size: 15px 
-                        color: rgba(29, 32, 61, 1)
-                        transition: .3s linear
-                        &:hover
-                            color: rgba(63, 128, 236, 1)
-                            background-color: transparent
+            .dropdown2-menu
+                border: none 
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 10px
+                width: 750px
+                position: absolute
+                top: 100%
+                left: 0
+                z-index: 1000
+                display: none
+                float: left
+                color: #212529
+                text-align: left
+                background-color: #fff
+                background-clip: padding-box
+                .addHover 
+                    background-color: rgba(237, 243, 255, 1)  
+                    color: rgba(63, 128, 236, 1) !important
+                    display: flex
+                    justify-content: space-between
+                    font-weight: bold
+                    i 
+                        display: inline-flex !important
+                        transform: rotate(90deg)
+                .leftBlock 
+                    a 
+                        display: inline-flex
+                        width: 100%
+                .leftBlock, .middleBlock, .rightBlock
+                    width: 33.33%
+                    a 
+                        color: rgba(90, 89, 112, 1)
+                        padding: 11px 35px
+                        i 
+                            display: none
+                .middleBlock 
+                    .soc, .nesoc 
+                        display: none
+                        flex-direction: column
+                .rightBlock 
+                    .mill, .phis, .family, .inv, .other, .pens, .ip, .urface
+                        display: none
+                        flex-direction: column
+                        .block 
+                            display: flex
+                            a
+                                width: 100%
+                                p 
+                                    color: rgba(90, 89, 112, 1) !important
+                                    font-weight: normal !important
+                                    font-size: 13px
+                                    margin-left: 0
+                                    margin-bottom: 0
+                            &:hover 
+                                a 
+                                    font-weight: bold
+                                    background-color: rgba(237, 243, 255, 1)
+                                    color: rgba(63, 128, 236, 1)
+                                
+                h5 
+                    padding: 30px 35px 0 35px
+        .rightBlock
+            a 
+                color: rgba(29, 32, 61, 1)
+                font-size: 16px
+                &[aria-expanded="false"] 
+                    i 
+                        transform: rotate(180deg)
+                &:hover 
+                    text-decoration: none
+            .dropdown-toggle::after 
+                display: none
+            .profile
+                margin-left: 60px 
+            .dropdown-menu 
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 6px
+                border: none
+                top: 122%
+                left: -18px
+                a
+                    font-size: 15px 
+                    color: rgba(29, 32, 61, 1)
+                    transition: .3s linear
+                    &:hover
+                        color: rgba(63, 128, 236, 1)
+                        background-color: transparent
+                    
+#lk
     #screen1
         h4.path 
             margin-top: 100px
@@ -745,10 +813,105 @@ footer
             font-weight: bold
             color: rgba(29, 32, 61, 1)
         .groupCard 
+            margin-bottom: 200px
             .card 
-                
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 8px
+                .card-body
+                    padding: 40px 72px
+                    img 
+                        object-fit: contain
+                    .cardWrapper 
+                        margin-left: 64px
+                        h4 
+                            color: rgba(29, 32, 61, 1)
+                            font-size: 32px 
+                            transition: .3s linear
+                            font-weight: bold
+                        p 
+                            font-size: 16px 
+                            color: rgba(90, 89, 112, 1)
+                        .bottomBlock 
+                            color: rgba(138, 142, 171, 1) 
+                            font-size: 15px
+                            span 
+                                font-size: 40px 
+                                font-weight: bold
+                                color: rgba(63, 128, 236, 1)
+                &:hover 
+                    .cardWrapper
+                        h4 
+                            color: rgba(63, 128, 236, 1)
 
+.red 
+    border: 1px solid #F54F3F
+.wrong 
+    color: rgba(245, 79, 63, 1)
+    font-size: 14px
 
+#payment 
+    .main 
+        margin-bottom: 200px
+        h3.h3 
+            font-size: 36px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+            margin-top: 92px
+        h5.h5 
+            font-size: 22px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+        h6 
+            margin-top: 60px
+            font-size: 20px
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+            margin-bottom: 30px
+        .categoryName
+            margin-top: 60px
+            font-size: 14px 
+            color: rgba(138, 142, 171, 1)
+        .category 
+            h6
+                color: rgba(90, 89, 112, 1)
+                font-weight: bold
+                font-size: 20px
+        .cost, .sale
+            p 
+                span 
+                    font-size: 22px 
+                    font-weight: bold
+                    margin-left: 12px
+                    color: rgba(63, 128, 236, 1)
+        .sale 
+            p 
+                span 
+                    color: rgba(245, 79, 63, 1) !important
+        form 
+            input 
+                background-color: rgba(242, 245, 255, 1)
+                border-radius: 5px
+                padding: 13px 26px 
+                border: none
+                min-width: 345px
+                color: rgba(90, 89, 112, 1)
+            button 
+                border-radius: 5px 
+                color: white 
+                background: rgba(63, 128, 236, 1)
+                padding: 18px 50px
+                font-weight: bold
+                margin-left: 15px
+        .groupCard 
+            display: flex
+            width: 100%
+            .card 
+                height: 200px 
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 8px
+                display: flex
+                justify-content: center
+                align-items: center
 
 /** Modals **/ 
 

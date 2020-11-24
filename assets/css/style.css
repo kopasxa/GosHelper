@@ -12,6 +12,7 @@ body a {
 
 body a:hover {
   color: white;
+  text-decoration: none;
 }
 
 body .btn.focus, body .btn:focus {
@@ -1058,35 +1059,145 @@ footer .container nav li a:hover {
   font-size: 16px;
 }
 
-#lk header {
+header.lk {
   -webkit-box-shadow: 0px 4px 50px rgba(70, 70, 70, 0.05);
           box-shadow: 0px 4px 50px rgba(70, 70, 70, 0.05);
   height: 94px;
 }
 
-#lk header nav .rightBlock a {
+header.lk nav .menu .dropdown-toggle2 {
+  color: #1d203d;
+}
+
+header.lk nav .menu .dropdown-toggle2:after {
+  display: none;
+}
+
+header.lk nav .menu .dropdown2-menu {
+  border: none;
+  -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+          box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+  border-radius: 10px;
+  width: 750px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+header.lk nav .menu .dropdown2-menu .addHover {
+  background-color: #edf3ff;
+  color: #3f80ec !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+}
+
+header.lk nav .menu .dropdown2-menu .addHover i {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header.lk nav .menu .dropdown2-menu .leftBlock a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+header.lk nav .menu .dropdown2-menu .leftBlock, header.lk nav .menu .dropdown2-menu .middleBlock, header.lk nav .menu .dropdown2-menu .rightBlock {
+  width: 33.33%;
+}
+
+header.lk nav .menu .dropdown2-menu .leftBlock a, header.lk nav .menu .dropdown2-menu .middleBlock a, header.lk nav .menu .dropdown2-menu .rightBlock a {
+  color: #5a5970;
+  padding: 11px 35px;
+}
+
+header.lk nav .menu .dropdown2-menu .leftBlock a i, header.lk nav .menu .dropdown2-menu .middleBlock a i, header.lk nav .menu .dropdown2-menu .rightBlock a i {
+  display: none;
+}
+
+header.lk nav .menu .dropdown2-menu .middleBlock .soc, header.lk nav .menu .dropdown2-menu .middleBlock .nesoc {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.lk nav .menu .dropdown2-menu .rightBlock .mill, header.lk nav .menu .dropdown2-menu .rightBlock .phis, header.lk nav .menu .dropdown2-menu .rightBlock .family, header.lk nav .menu .dropdown2-menu .rightBlock .inv, header.lk nav .menu .dropdown2-menu .rightBlock .other, header.lk nav .menu .dropdown2-menu .rightBlock .pens, header.lk nav .menu .dropdown2-menu .rightBlock .ip, header.lk nav .menu .dropdown2-menu .rightBlock .urface {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.lk nav .menu .dropdown2-menu .rightBlock .mill .block, header.lk nav .menu .dropdown2-menu .rightBlock .phis .block, header.lk nav .menu .dropdown2-menu .rightBlock .family .block, header.lk nav .menu .dropdown2-menu .rightBlock .inv .block, header.lk nav .menu .dropdown2-menu .rightBlock .other .block, header.lk nav .menu .dropdown2-menu .rightBlock .pens .block, header.lk nav .menu .dropdown2-menu .rightBlock .ip .block, header.lk nav .menu .dropdown2-menu .rightBlock .urface .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.lk nav .menu .dropdown2-menu .rightBlock .mill .block a, header.lk nav .menu .dropdown2-menu .rightBlock .phis .block a, header.lk nav .menu .dropdown2-menu .rightBlock .family .block a, header.lk nav .menu .dropdown2-menu .rightBlock .inv .block a, header.lk nav .menu .dropdown2-menu .rightBlock .other .block a, header.lk nav .menu .dropdown2-menu .rightBlock .pens .block a, header.lk nav .menu .dropdown2-menu .rightBlock .ip .block a, header.lk nav .menu .dropdown2-menu .rightBlock .urface .block a {
+  width: 100%;
+}
+
+header.lk nav .menu .dropdown2-menu .rightBlock .mill .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .phis .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .family .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .inv .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .other .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .pens .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .ip .block a p, header.lk nav .menu .dropdown2-menu .rightBlock .urface .block a p {
+  color: #5a5970 !important;
+  font-weight: normal !important;
+  font-size: 13px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+header.lk nav .menu .dropdown2-menu .rightBlock .mill .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .phis .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .family .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .inv .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .other .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .pens .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .ip .block:hover a, header.lk nav .menu .dropdown2-menu .rightBlock .urface .block:hover a {
+  font-weight: bold;
+  background-color: #edf3ff;
+  color: #3f80ec;
+}
+
+header.lk nav .menu .dropdown2-menu h5 {
+  padding: 30px 35px 0 35px;
+}
+
+header.lk nav .rightBlock a {
   color: #1d203d;
   font-size: 16px;
 }
 
-#lk header nav .rightBlock a[aria-expanded="false"] i {
+header.lk nav .rightBlock a[aria-expanded="false"] i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-#lk header nav .rightBlock a:hover {
+header.lk nav .rightBlock a:hover {
   text-decoration: none;
 }
 
-#lk header nav .rightBlock .dropdown-toggle::after {
+header.lk nav .rightBlock .dropdown-toggle::after {
   display: none;
 }
 
-#lk header nav .rightBlock .profile {
+header.lk nav .rightBlock .profile {
   margin-left: 60px;
 }
 
-#lk header nav .rightBlock .dropdown-menu {
+header.lk nav .rightBlock .dropdown-menu {
   -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
           box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
   border-radius: 6px;
@@ -1095,14 +1206,14 @@ footer .container nav li a:hover {
   left: -18px;
 }
 
-#lk header nav .rightBlock .dropdown-menu a {
+header.lk nav .rightBlock .dropdown-menu a {
   font-size: 15px;
   color: #1d203d;
   -webkit-transition: .3s linear;
   transition: .3s linear;
 }
 
-#lk header nav .rightBlock .dropdown-menu a:hover {
+header.lk nav .rightBlock .dropdown-menu a:hover {
   color: #3f80ec;
   background-color: transparent;
 }
@@ -1153,6 +1264,155 @@ footer .container nav li a:hover {
   font-size: 36px;
   font-weight: bold;
   color: #1d203d;
+}
+
+#lk #screen2 .groupCard {
+  margin-bottom: 200px;
+}
+
+#lk #screen2 .groupCard .card {
+  -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+          box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+  border-radius: 8px;
+}
+
+#lk #screen2 .groupCard .card .card-body {
+  padding: 40px 72px;
+}
+
+#lk #screen2 .groupCard .card .card-body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#lk #screen2 .groupCard .card .card-body .cardWrapper {
+  margin-left: 64px;
+}
+
+#lk #screen2 .groupCard .card .card-body .cardWrapper h4 {
+  color: #1d203d;
+  font-size: 32px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-weight: bold;
+}
+
+#lk #screen2 .groupCard .card .card-body .cardWrapper p {
+  font-size: 16px;
+  color: #5a5970;
+}
+
+#lk #screen2 .groupCard .card .card-body .cardWrapper .bottomBlock {
+  color: #8a8eab;
+  font-size: 15px;
+}
+
+#lk #screen2 .groupCard .card .card-body .cardWrapper .bottomBlock span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3f80ec;
+}
+
+#lk #screen2 .groupCard .card:hover .cardWrapper h4 {
+  color: #3f80ec;
+}
+
+.red {
+  border: 1px solid #F54F3F;
+}
+
+.wrong {
+  color: #f54f3f;
+  font-size: 14px;
+}
+
+#payment .main {
+  margin-bottom: 200px;
+}
+
+#payment .main h3.h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1d203d;
+  margin-top: 92px;
+}
+
+#payment .main h5.h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1d203d;
+}
+
+#payment .main h6 {
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d203d;
+  margin-bottom: 30px;
+}
+
+#payment .main .categoryName {
+  margin-top: 60px;
+  font-size: 14px;
+  color: #8a8eab;
+}
+
+#payment .main .category h6 {
+  color: #5a5970;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#payment .main .cost p span, #payment .main .sale p span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 12px;
+  color: #3f80ec;
+}
+
+#payment .main .sale p span {
+  color: #f54f3f !important;
+}
+
+#payment .main form input {
+  background-color: #f2f5ff;
+  border-radius: 5px;
+  padding: 13px 26px;
+  border: none;
+  min-width: 345px;
+  color: #5a5970;
+}
+
+#payment .main form button {
+  border-radius: 5px;
+  color: white;
+  background: #3f80ec;
+  padding: 18px 50px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+#payment .main .groupCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#payment .main .groupCard .card {
+  height: 200px;
+  -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+          box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /** Modals **/
