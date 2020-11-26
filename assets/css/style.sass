@@ -298,8 +298,7 @@ body
     margin-right: 25px
 
 #email 
-    min-height: 450px
-    margin-top: 150px
+    margin-top: 200px
     .leftBlock 
         form 
             input[type="text"] 
@@ -326,6 +325,7 @@ body
                 font-size: 14px
 footer 
     min-height: 160px
+    margin-top: 200px
     background-color: rgba(43, 47, 78, 1)
     display: flex
     align-items: center
@@ -342,7 +342,6 @@ footer
                     color: white
 
 #about
-    min-height: 2910px
     background: url("../img/bgAbout.png") no-repeat
     background-position-y: 150px
     nav 
@@ -396,10 +395,8 @@ footer
                 line-height: 170%
             .offerDesc 
                 opacity: 0.7
-        #screen1 
-            min-height: 700px
-        #screen2 
-            min-height: 650px
+        #screen2
+            margin-top: 400px
             .groupInfoCards 
                 margin-top: 80px
                 .infoCard 
@@ -414,12 +411,11 @@ footer
                     img 
                         box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
         #screen3 
-            min-height: 670px     
+            margin-top: 270px    
         #screen4 
             min-height: 450px
             
 #assistant    
-    min-height: 2910px
     background: url("../img/bgAboutTab2.png") no-repeat
     background-position-y: 150px
     nav 
@@ -844,19 +840,20 @@ header.lk
                             color: rgba(63, 128, 236, 1)
 
 .red 
-    border: 1px solid #F54F3F
+    border: 1px solid #F54F3F !important
 .wrong 
     color: rgba(245, 79, 63, 1)
     font-size: 14px
 
+h3.h3 
+    font-size: 36px 
+    font-weight: bold
+    color: rgba(29, 32, 61, 1)
+    margin-top: 92px
+
 #payment 
     .main 
         margin-bottom: 200px
-        h3.h3 
-            font-size: 36px 
-            font-weight: bold
-            color: rgba(29, 32, 61, 1)
-            margin-top: 92px
         h5.h5 
             font-size: 22px 
             font-weight: bold
@@ -876,6 +873,7 @@ header.lk
                 color: rgba(90, 89, 112, 1)
                 font-weight: bold
                 font-size: 20px
+                margin-top: 0
         .cost, .sale
             p 
                 span 
@@ -912,6 +910,242 @@ header.lk
                 display: flex
                 justify-content: center
                 align-items: center
+
+#myProfile  
+    img 
+        object-fit: contain
+    .imgProf 
+        p 
+            font-size: 20px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+    hr 
+        height: 1px 
+        background: rgba(138, 142, 171, .3)
+        border: none
+        margin-top: 40px
+    .data 
+        h5 
+            font-size: 22px 
+            font-weight: bold
+            color: rgba(29, 32, 61, 1)
+    .card 
+        &:hover
+            transform: scale(1)
+            color: rgba(29, 32, 61, 1)
+    .passport 
+        .yourPasport
+            margin-top: 75px
+            h5 
+                color: rgba(29, 32, 61, 1)
+                font-size: 17px
+                font-weight: bold
+            .buttons
+                a 
+                    text-decoration: underline
+                    img 
+                        margin-right: 10px
+                .edit 
+                    color: rgba(63, 128, 236, 1) 
+                .delete 
+                    color: rgba(245, 79, 63, 1)
+    .discharges
+        h5 
+            margin-bottom: 50px
+            font-weight: bold
+            color:rgba(29, 32, 61, 1)
+        .discharge 
+            margin-top: 60px
+            i 
+                color: rgba(63, 128, 236, 1)
+            h6 
+                font-weight: bold
+            .card 
+                .card-body 
+                    p 
+                        color: rgba(90, 89, 112, 1)
+                        font-weight: bold
+                    a 
+                        color: rgba(63, 128, 236, 1) 
+                        text-decoration: underline
+                        margin-left: 8px
+
+    .submit 
+        display: flex
+        margin-top: 50px
+        align-items: center
+        .done 
+            display: block
+        p 
+            display: none
+            margin: 0
+            font-size: 14px 
+            color: rgba(77, 175, 73, 1)
+    .block 
+        p 
+            font-weight: bold
+            font-size: 16px 
+            color: rgba(29, 32, 61, 1)
+            margin-top: 35px
+        input 
+            background: rgba(242, 245, 255, 1)
+            border-radius: 5px
+            border: none
+            padding: 13px 26px
+        input[type="password"]
+            background-image: url("../img/noView.png")
+            background-position: 95% 50% 
+            background-repeat: no-repeat
+
+#test 
+    h4.h4 
+        font-size: 22px 
+        font-weight: bold
+        color: rgba(29, 32, 61, 1)
+        margin-top: 100px
+    .progress 
+        height: 10px
+        border-radius: 50px
+        background: rgba(63, 128, 236, .1)
+        margin-top: 45px
+        margin-bottom: 80px
+        .progress-bar 
+            height: 10px 
+            border-radius: 50px
+            background: rgba(63, 128, 236, 1)
+    .groupCard 
+        .wrong 
+            margin-top: 13px
+            display: block
+        .redCard 
+            border: 2px solid rgba(245, 79, 63, 1)
+        .card 
+            margin-top: 40px
+            padding: 30px 40px
+            box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+            border-radius: 12px
+            &:hover
+                transform: none
+                color: rgba(29, 32, 61, 1)
+            .card-header 
+                background: transparent 
+                border: none
+                .color-grey 
+                    color: rgba(138, 142, 171, .4) !important
+                    font-size: 14px
+            .card-body 
+                color: rgba(90, 89, 112, 1)
+                ol
+                    li 
+                        margin-left: 17px
+                        margin-top: 10px
+                ul 
+                    li 
+                        display: flex
+                        align-items: start
+                        margin-top: 10px
+                        input 
+                            display: none
+                        label 
+                            display: inline-flex
+                            user-select: none
+                        label::before 
+                            content: ''
+                            display: inline-block
+                            width: 20px
+                            height: 20px
+                            flex-shrink: 0
+                            flex-grow: 0
+                            margin-top: 5px
+                            border: 1px solid rgba(63, 128, 236, 1)
+                            border-radius: 2px
+                            margin-right: 15px
+                            background-repeat: no-repeat
+                            background-position: center center
+                            background-size: 50% 50%
+                        input:checked+label::before 
+                            border-color: #0b76ef
+                            background-color: #0b76ef
+                            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")       
+            .card-footer 
+                background: transparent 
+                border: none
+                input 
+                    display: none
+                input[type=radio]:checked + label:before
+                    background: url("../img/radioOn.png") 0 0 no-repeat
+                label 
+                    color: rgba(29, 32, 61, 1)
+                    font-size: 16px
+                    display: inline-block;
+                    cursor: pointer
+                    position: relative
+                    padding-left: 35px
+                    &:before 
+                        content: "";
+                        display: inline-block;
+                        width: 24px
+                        height:  24px
+                        position: absolute
+                        left: 0
+                        bottom: 1px
+                        background: url("../img/radioOff.png") 0 0 no-repeat
+    .buttons 
+        margin-top: 70px
+
+button.transpBlue
+    border: 1px solid rgba(63, 128, 236, 1)
+    background: transparent 
+    padding: 18px 50px
+    font-weight: bold
+    font-size: 15px
+    color: rgba(63, 128, 236, 1) 
+
+button.btnBlue 
+    padding: 18px 50px 
+    background: rgba(63, 128, 236, 1)
+    font-weight: bold
+    color: white
+    font-size: 15px
+
+#repeatTest 
+    .main 
+        margin-top: 176px
+        h5 
+            font-size: 21px
+            font-weight: bold
+            color: rgba(90, 89, 112, 1)
+        h1  
+            font-size: 36px 
+            font-weight: bold 
+            color: rgba(29, 32, 61, 1)
+            max-width: 520px
+            margin-top: 30px
+        form 
+            margin-top: 60px 
+            input 
+                border-radius: 5px 
+                background: rgba(242, 245, 255, 1)
+                color: rgba(90, 89, 112, 1)
+                border: none
+                padding: 17px 26px
+                width: 60%
+            button 
+                margin-left: 15px
+        p 
+            color: rgba(138, 142, 171, .7)
+            font-size: 14px
+            margin-top: 20px
+
+#page404 
+    .main 
+        margin-top: 126px
+    h1  
+        font-size: 36px 
+        font-weight: bold 
+        color: rgba(29, 32, 61, 1)
+        margin-bottom: 50px
+        margin-top: 70px
 
 /** Modals **/ 
 

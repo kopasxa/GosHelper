@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-    <title>Госпомощник - Оплата</title>
+    <title>Госпомощник - Тест</title>
 </head>
 
 <body>
-    <section id="payment">
+    <section id="test">
         <header class="lk">
             <div class="container">
                 <nav class="navbar navbar-expand-lg col-12 pt-4 d-flex justify-content-between">
@@ -327,77 +327,103 @@
 
         <div class="main">
             <div class="container">
-                <h3 class="h3">Оплата</h3>
-                <div class="row d-flex justify-content-between">
-                    <div class="col-6">
-                        <div class="category">
-                            <p class="categoryName">Категория</p>
-                            <h6>Семья / Выдача удостоверения многодетной семьи</h6>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <div class="cost">
-                            <p class="categoryName">Стоимость тестирования</p>
-                            <p><img src="assets/img/price.png" alt=""> <span>75 ₽</span></p>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <div class="sale">
-                            <p class="categoryName">Стоимость со скидкой</p>
-                            <p><img src="assets/img/sale.png" alt=""> <span>45 ₽</span></p>
-                        </div>
-                    </div>
+                <h4 class="h4"><span>Семья</span> / <span>Выдача удостоверения многодетной семьи</span></h4>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 19%;" role="progressbar" aria-valuenow="19" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <p class="categoryName">
-                            Промокод
-                        </p>
-                        <form action="" class="d-flex mb-2">
-                            <input type="text" class="red" placeholder="Введите код">
-                            <button class="btn">Применить</button>
-                        </form>
-                        <span class="wrong">Промокод введен неверно!</span>
+                <div class="groupCard">
+                    <div class="card redCard">
+                        <div class="card-header">
+                            <p class="color-grey mb-0">Вопрос <span>15</span>/<span>45</span></p>
+                            <h5 class="h5 mt-2">Все пункты про вас?</h5>
+                            <hr class="mb-0">
+                        </div>
+                        <div class="card-body pt-1 pb-1">
+                            <ol class="p-0">
+                                <li>Вы работали в районах Крайнего Севера или приравненных к нему местностям</li>
+                                <li>Ваш трудовой стаж в данной местности не менее 20 лет (мужчина) и 15 лет (женщина)</li>
+                                <li>Ваш общий трудовой стаж составляет не менее 25 лет (мужчина) / 20 лет (женщина)</li>
+                                <li>Вы — мужчина 55 лет и старше или женщина 50 лет и старше</li>
+                            </ol>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <div class="radios d-flex align-items-center">
+                                <input type="radio" id="yes" name="radio">
+                                <label for="yes" class="mb-0">
+                                    Да
+                                </label>
+                                <input type="radio" id="no" name="radio">
+                                <label for="no" class="mb-0" style="margin-left: 60px;">
+                                    Нет
+                                </label>
+                            </div>
+                           <button class="btn transpBlue">
+                                Не уверен в ответе
+                           </button>
+                        </div>
                     </div>
+                    <span class="wrong ">Вы не ответили на вопрос</span>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="color-grey mb-0">Вопрос <span>16</span>/<span>45</span></p>
+                            <h5 class="h5 mt-2">Переезжали ли вы добровольно из зоны с правом на отселение не ранее 1986 года, и достигли ли вы возраста для досрочной пенсии?</h5>
+                            <hr class="mb-0">
+                        </div>
+                        <div class="card-body pt-1 pb-1">
+    
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <div class="radios d-flex align-items-center">
+                                <input type="radio" id="yes2" name="radio2">
+                                <label for="yes2" class="mb-0">
+                                    Да
+                                </label>
+                                <input type="radio" id="no2" name="radio2">
+                                <label for="no2" class="mb-0" style="margin-left: 60px;">
+                                    Нет
+                                </label>
+                            </div>
+                           <button class="btn transpBlue">
+                                Не уверен в ответе
+                           </button>
+                        </div>
+                    </div>
+                    <span class="wrong d-none">Вы не ответили на вопрос</span>
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="color-grey mb-0">Вопрос <span>15</span>/<span>45</span></p>
+                            <h5 class="h5 mt-2">Все пункты про вас?</h5>
+                            <hr class="mb-0">
+                        </div>
+                        <div class="card-body pt-1 pb-1">
+                            <ul class="p-0">
+                                <li><input type="checkbox" name="checkbox" id="check1"> <label for="check1">Являетесь военнослужащим, получившим инвалидность в период прохождения службы по призыву в роли солдата, матроса, сержанта, старшины</label></li>
+                                <li><input type="checkbox" name="checkbox" id="check2"> <label for="check2">Являетесь военнослужащим,получившим инвалидность не позднее 3 месяцев после увольнения со службы по призыву в роли солдата, матроса, сержанта, старшины</label></li>
+                                <li><input type="checkbox" name="checkbox" id="check3"> <label for="check3">Являетесь военнослужащим,получившим инвалидность позднее 3 месяцев после службы вследствие ранений, контузии, увечья или  заболеваний, приобретенных во время службы. </label></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <div class="radios d-flex align-items-center">
+                                <input type="radio" id="yes3" name="radio3">
+                                <label for="yes3" class="mb-0">
+                                    Да
+                                </label>
+                                <input type="radio" id="no3" name="radio3">
+                                <label for="no3" class="mb-0" style="margin-left: 60px;">
+                                    Нет
+                                </label>
+                            </div>
+                           <button class="btn transpBlue">
+                                Не уверен в ответе
+                           </button>
+                        </div>
+                    </div>
+                    <span class="wrong d-none">Вы не ответили на вопрос</span>
                 </div>
-                <h5 class="h5">Выберите способ оплаты:</h5>
-                <h6>Банковские карты</h6>
-                <div class="row">
-                    <div class="groupCard">
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/visa.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/mastercard.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/mir.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <h6>Электронный кошелёк</h6>
-                <div class="row">
-                    <div class="groupCard">
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/ya.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/qiwi.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-
-                        </div>
-                    </div>
+                <div class="buttons d-flex justify-content-between">
+                    <button class="btn transpBlue"><img class="mr-1" src="assets/img/arrowLeft.png" alt=""> Назад</button>
+                    <button class="btn btnBlue">Вперёд <img class="ml-1" src="assets/img/arrowRight.png" alt=""></button>
                 </div>
             </div>
         </div>

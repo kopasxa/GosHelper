@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-    <title>Госпомощник - Оплата</title>
+    <title>Госпомощник - Мой профиль</title>
 </head>
 
 <body>
-    <section id="payment">
+    <section id="myProfile">
         <header class="lk">
             <div class="container">
                 <nav class="navbar navbar-expand-lg col-12 pt-4 d-flex justify-content-between">
@@ -327,75 +327,166 @@
 
         <div class="main">
             <div class="container">
-                <h3 class="h3">Оплата</h3>
-                <div class="row d-flex justify-content-between">
-                    <div class="col-6">
-                        <div class="category">
-                            <p class="categoryName">Категория</p>
+                <h3 class="h3">Профиль пользователя</h3>
+                <div class="row imgProf">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center mt-5">
+                            <img src="assets/img/myProfileImg.png" alt="">
+                            <p class="name ml-4">Алексей Волков</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="data">
+                    <div class="row">
+                        <div class="leftBlock col-6">
+                            <h5 class="h5">Изменить данные:</h5>
+                            <form action="">
+                                <div class="block">
+                                    <p>ФИО:</p>
+                                    <input class="col-10" type="text" placeholder="Алексей Волков">
+                                </div>
+                                <div class="block">
+                                    <p>Номер телефона:</p>
+                                    <input class="col-10" type="text" placeholder="+7 (910) 110-10-10">
+                                </div>
+                                <div class="block">
+                                    <p>Почта:</p>
+                                    <input class="col-10" type="email" placeholder="mail@gmail.com">
+                                </div>
+                                <div class="row submit">
+                                    <div class="col-11 d-flex align-items-center">
+                                        <button class="btn btnBlue">Сохранить изменения</button>
+                                        <p class="ml-4 done">Данные успешно изменены</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="rightBlock col-6">
+                            <h5 class="h5">Изменить пароль:</h5>
+                            <form action="">
+                                <div class="block">
+                                    <p>Текущий пароль:</p>
+                                    <input class="col-10" type="password" placeholder="">
+                                </div>
+                                <div class="block">
+                                    <p>Новый пароль:</p>
+                                    <input class="col-10" type="password" placeholder="">
+                                </div>
+                                <div class="block">
+                                    <p>Повторите пароль:</p>
+                                    <input class="col-10" type="password" placeholder="">
+                                </div>
+                                <div class="row submit">
+                                    <div class="col-11 d-flex align-items-center">
+                                        <button class="btn btnBlue">Изменить пароль</button>
+                                        <p class="ml-4 done">Пароль успешно изменён</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="passport">
+                    <h5 class="h5">
+                        Добавить паспортные данные:
+                    </h5>
+                    <form action="">
+                        <div class="row inputs d-flex flex-wrap">
+                            <div class="col-4">
+                                <div class="block">
+                                    <p>Серия / Номер:</p>
+                                    <input class="w-100" type="text" placeholder="1515 123456">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="block">
+                                    <p>Дата выдачи:</p>
+                                    <input class="w-100" type="text" placeholder="11.11.2011">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="block">
+                                    <p>Кем выдан:</p>
+                                    <input class="w-100" type="text" placeholder="УМВД">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="block">
+                                    <p>Доп. поле:</p>
+                                    <input class="w-100" type="text" placeholder="1515 123456">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row submit">
+                            <div class="col-6 d-flex align-items-center">
+                                <button class="btn btnBlue">Добавить</button>
+                                <p class="ml-4 done">Данные успешно добавлены</p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="yourPasport">
+                        <div class="card d-flex flex-row">
+                            <img class="card-img-left" src="assets/img/passportImg.png" alt="">
+                            <div class="card-body">
+                                <h5>Паспорт <br>
+                                    <p>Алексей Волков</p>
+                                </h5>
+                                <div class="buttons d-flex">
+                                    <a href="#" class="edit"><img src="assets/img/editImg.png" alt="">Изменить</a>
+                                    <a href="#" class="delete ml-3"><img src="assets/img/deleteImg.png"
+                                            alt="">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="discharges">
+                    <h5 class="h5">Заказанные выписки:</h5>
+                    <div class="discharge d-flex">
+                        <i class="fa fa-check"></i>
+                        <div class="body ml-4">
                             <h6>Семья / Выдача удостоверения многодетной семьи</h6>
+                            <div class="d-flex">
+                                <div class="card d-flex flex-row">
+                                    <img src="assets/img/pdfImg.png" alt="" class="card-img-left">
+                                    <div class="card-body justify-content-center d-flex flex-column">
+                                        <p class="m-0">PDF</p>
+                                        <a href="#"><img src="assets/img/download.png" alt="">Скачать</a>
+                                    </div>
+                                </div>
+                                <div class="card d-flex flex-row">
+                                    <img src="assets/img/docImg.png" alt="" class="card-img-left">
+                                    <div class="card-body justify-content-center d-flex flex-column">
+                                        <p class="m-0">Word</p>
+                                        <a href="#"><img src="assets/img/download.png" alt="">Скачать</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <div class="cost">
-                            <p class="categoryName">Стоимость тестирования</p>
-                            <p><img src="assets/img/price.png" alt=""> <span>75 ₽</span></p>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex justify-content-end">
-                        <div class="sale">
-                            <p class="categoryName">Стоимость со скидкой</p>
-                            <p><img src="assets/img/sale.png" alt=""> <span>45 ₽</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <p class="categoryName">
-                            Промокод
-                        </p>
-                        <form action="" class="d-flex mb-2">
-                            <input type="text" class="red" placeholder="Введите код">
-                            <button class="btn">Применить</button>
-                        </form>
-                        <span class="wrong">Промокод введен неверно!</span>
-                    </div>
-                </div>
-                <h5 class="h5">Выберите способ оплаты:</h5>
-                <h6>Банковские карты</h6>
-                <div class="row">
-                    <div class="groupCard">
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/visa.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/mastercard.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/mir.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <h6>Электронный кошелёк</h6>
-                <div class="row">
-                    <div class="groupCard">
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/ya.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4 hovers">
-                            <a href="#" class="card">
-                                <img src="assets/img/qiwi.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col-4">
-
+                    <div class="discharge d-flex">
+                        <i class="fa fa-check"></i>
+                        <div class="body ml-4">
+                            <h6>Семья / Выдача удостоверения многодетной семьи</h6>
+                            <div class="d-flex">
+                                <div class="card d-flex flex-row">
+                                    <img src="assets/img/pdfImg.png" alt="" class="card-img-left">
+                                    <div class="card-body justify-content-center d-flex flex-column">
+                                        <p class="m-0">PDF</p>
+                                        <a href="#"><img src="assets/img/download.png" alt="">Скачать</a>
+                                    </div>
+                                </div>
+                                <div class="card d-flex flex-row">
+                                    <img src="assets/img/docImg.png" alt="" class="card-img-left">
+                                    <div class="card-body justify-content-center d-flex flex-column">
+                                        <p class="m-0">Word</p>
+                                        <a href="#"><img src="assets/img/download.png" alt="">Скачать</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -462,8 +462,7 @@ body .btn.focus, body .btn:focus {
 }
 
 #email {
-  min-height: 450px;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 #email .leftBlock form input[type="text"] {
@@ -496,6 +495,7 @@ body .btn.focus, body .btn:focus {
 
 footer {
   min-height: 160px;
+  margin-top: 200px;
   background-color: #2b2f4e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,7 +532,6 @@ footer .container nav li a:hover {
 }
 
 #about {
-  min-height: 2910px;
   background: url("../img/bgAbout.png") no-repeat;
   background-position-y: 150px;
 }
@@ -613,12 +612,8 @@ footer .container nav li a:hover {
   opacity: 0.7;
 }
 
-#about #first #screen1 {
-  min-height: 700px;
-}
-
 #about #first #screen2 {
-  min-height: 650px;
+  margin-top: 400px;
 }
 
 #about #first #screen2 .groupInfoCards {
@@ -646,7 +641,7 @@ footer .container nav li a:hover {
 }
 
 #about #first #screen3 {
-  min-height: 670px;
+  margin-top: 270px;
 }
 
 #about #first #screen4 {
@@ -654,7 +649,6 @@ footer .container nav li a:hover {
 }
 
 #assistant {
-  min-height: 2910px;
   background: url("../img/bgAboutTab2.png") no-repeat;
   background-position-y: 150px;
 }
@@ -1318,7 +1312,7 @@ header.lk nav .rightBlock .dropdown-menu a:hover {
 }
 
 .red {
-  border: 1px solid #F54F3F;
+  border: 1px solid #F54F3F !important;
 }
 
 .wrong {
@@ -1326,15 +1320,15 @@ header.lk nav .rightBlock .dropdown-menu a:hover {
   font-size: 14px;
 }
 
-#payment .main {
-  margin-bottom: 200px;
-}
-
-#payment .main h3.h3 {
+h3.h3 {
   font-size: 36px;
   font-weight: bold;
   color: #1d203d;
   margin-top: 92px;
+}
+
+#payment .main {
+  margin-bottom: 200px;
 }
 
 #payment .main h5.h5 {
@@ -1361,6 +1355,7 @@ header.lk nav .rightBlock .dropdown-menu a:hover {
   color: #5a5970;
   font-weight: bold;
   font-size: 20px;
+  margin-top: 0;
 }
 
 #payment .main .cost p span, #payment .main .sale p span {
@@ -1413,6 +1408,350 @@ header.lk nav .rightBlock .dropdown-menu a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#myProfile img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#myProfile .imgProf p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d203d;
+}
+
+#myProfile hr {
+  height: 1px;
+  background: rgba(138, 142, 171, 0.3);
+  border: none;
+  margin-top: 40px;
+}
+
+#myProfile .data h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1d203d;
+}
+
+#myProfile .card:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: #1d203d;
+}
+
+#myProfile .passport .yourPasport {
+  margin-top: 75px;
+}
+
+#myProfile .passport .yourPasport h5 {
+  color: #1d203d;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#myProfile .passport .yourPasport .buttons a {
+  text-decoration: underline;
+}
+
+#myProfile .passport .yourPasport .buttons a img {
+  margin-right: 10px;
+}
+
+#myProfile .passport .yourPasport .buttons .edit {
+  color: #3f80ec;
+}
+
+#myProfile .passport .yourPasport .buttons .delete {
+  color: #f54f3f;
+}
+
+#myProfile .discharges h5 {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#myProfile .discharges .discharge {
+  margin-top: 60px;
+}
+
+#myProfile .discharges .discharge i {
+  color: #3f80ec;
+}
+
+#myProfile .discharges .discharge h6 {
+  font-weight: bold;
+}
+
+#myProfile .discharges .discharge .card .card-body p {
+  color: #5a5970;
+  font-weight: bold;
+}
+
+#myProfile .discharges .discharge .card .card-body a {
+  color: #3f80ec;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+#myProfile .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myProfile .submit .done {
+  display: block;
+}
+
+#myProfile .submit p {
+  display: none;
+  margin: 0;
+  font-size: 14px;
+  color: #4daf49;
+}
+
+#myProfile .block p {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1d203d;
+  margin-top: 35px;
+}
+
+#myProfile .block input {
+  background: #f2f5ff;
+  border-radius: 5px;
+  border: none;
+  padding: 13px 26px;
+}
+
+#myProfile .block input[type="password"] {
+  background-image: url("../img/noView.png");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+}
+
+#test h4.h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1d203d;
+  margin-top: 100px;
+}
+
+#test .progress {
+  height: 10px;
+  border-radius: 50px;
+  background: rgba(63, 128, 236, 0.1);
+  margin-top: 45px;
+  margin-bottom: 80px;
+}
+
+#test .progress .progress-bar {
+  height: 10px;
+  border-radius: 50px;
+  background: #3f80ec;
+}
+
+#test .groupCard .wrong {
+  margin-top: 13px;
+  display: block;
+}
+
+#test .groupCard .redCard {
+  border: 2px solid #f54f3f;
+}
+
+#test .groupCard .card {
+  margin-top: 40px;
+  padding: 30px 40px;
+  -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+          box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+  border-radius: 12px;
+}
+
+#test .groupCard .card:hover {
+  -webkit-transform: none;
+          transform: none;
+  color: #1d203d;
+}
+
+#test .groupCard .card .card-header {
+  background: transparent;
+  border: none;
+}
+
+#test .groupCard .card .card-header .color-grey {
+  color: rgba(138, 142, 171, 0.4) !important;
+  font-size: 14px;
+}
+
+#test .groupCard .card .card-body {
+  color: #5a5970;
+}
+
+#test .groupCard .card .card-body ol li {
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+#test .groupCard .card .card-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-top: 10px;
+}
+
+#test .groupCard .card .card-body ul li input {
+  display: none;
+}
+
+#test .groupCard .card .card-body ul li label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#test .groupCard .card .card-body ul li label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-top: 5px;
+  border: 1px solid #3f80ec;
+  border-radius: 2px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+#test .groupCard .card .card-body ul li input:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+#test .groupCard .card .card-footer {
+  background: transparent;
+  border: none;
+}
+
+#test .groupCard .card .card-footer input {
+  display: none;
+}
+
+#test .groupCard .card .card-footer input[type=radio]:checked + label:before {
+  background: url("../img/radioOn.png") 0 0 no-repeat;
+}
+
+#test .groupCard .card .card-footer label {
+  color: #1d203d;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+}
+
+#test .groupCard .card .card-footer label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url("../img/radioOff.png") 0 0 no-repeat;
+}
+
+#test .buttons {
+  margin-top: 70px;
+}
+
+button.transpBlue {
+  border: 1px solid #3f80ec;
+  background: transparent;
+  padding: 18px 50px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #3f80ec;
+}
+
+button.btnBlue {
+  padding: 18px 50px;
+  background: #3f80ec;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+#repeatTest .main {
+  margin-top: 176px;
+}
+
+#repeatTest .main h5 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #5a5970;
+}
+
+#repeatTest .main h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1d203d;
+  max-width: 520px;
+  margin-top: 30px;
+}
+
+#repeatTest .main form {
+  margin-top: 60px;
+}
+
+#repeatTest .main form input {
+  border-radius: 5px;
+  background: #f2f5ff;
+  color: #5a5970;
+  border: none;
+  padding: 17px 26px;
+  width: 60%;
+}
+
+#repeatTest .main form button {
+  margin-left: 15px;
+}
+
+#repeatTest .main p {
+  color: rgba(138, 142, 171, 0.7);
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#page404 .main {
+  margin-top: 126px;
+}
+
+#page404 h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1d203d;
+  margin-bottom: 50px;
+  margin-top: 70px;
 }
 
 /** Modals **/
