@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
-    <title>Госпомощник - Мой профиль</title>
+    <title>Госпомощник - Результат</title>
 </head>
 
 <body>
-    <section id="myProfile">
+    <section id="result">
         <header class="lk">
             <div class="container">
                 <nav class="navbar navbar-expand-lg col-12 pt-4 d-flex justify-content-between">
@@ -305,10 +305,7 @@
                             <img src="assets/img/location.png" alt="">
                             <a href="#" data-toggle="modal" data-target="#location1" class="nameCity ml-3 m-0">Москва<i
                                     class="fas fa-chevron-up ml-2" style="transform: rotate(180deg);"></i></a>
-
                         </div>
-
-
                         <div class="profile d-flex align-items-center dropdown">
                             <img src="assets/img/profileAvatar.png" alt="">
                             <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
@@ -327,171 +324,437 @@
 
         <div class="main">
             <div class="container">
-                <h3 class="h3">Профиль пользователя</h3>
-                <div class="row imgProf">
-                    <div class="col-12">
-                        <div class="d-flex align-items-center mt-5">
-                            <img src="assets/img/myProfileImg.png" alt="">
-                            <p class="name ml-4">Алексей Волков</p>
+                <h5 class="h5"><span>Семья</span> / <span>Выдача удостоверения многодетной семьи</span></h5>
+                <h2>Что положено вам от государства:</h2>
+                <div class="groupCard">
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Социальные пособия и другие социальные выплаты, носящие
+                                        характер
+                                        дополнительной материальной помощи</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu hovers shows">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="data">
-                    <div class="row">
-                        <div class="leftBlock col-6">
-                            <h5 class="h5">Изменить данные:</h5>
-                            <form action="">
-                                <div class="block">
-                                    <p>ФИО:</p>
-                                    <input class="col-10" type="text" placeholder="Алексей Волков">
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Компенсации и выплаты компенсационного характера</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
                                 </div>
-                                <div class="block">
-                                    <p>Номер телефона:</p>
-                                    <input class="col-10" type="text" placeholder="+7 (910) 110-10-10">
-                                </div>
-                                <div class="block">
-                                    <p>Почта:</p>
-                                    <input class="col-10" type="email" placeholder="mail@gmail.com">
-                                </div>
-                                <div class="row submit">
-                                    <div class="col-11 d-flex align-items-center">
-                                        <button class="btn btnBlue">Сохранить изменения</button>
-                                        <p class="ml-4 done">Данные успешно изменены</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="rightBlock col-6">
-                            <h5 class="h5">Изменить пароль:</h5>
-                            <form action="">
-                                <div class="block">
-                                    <p>Текущий пароль:</p>
-                                    <input class="col-10" type="password" placeholder="">
-                                </div>
-                                <div class="block">
-                                    <p>Новый пароль:</p>
-                                    <input class="col-10" type="password" placeholder="">
-                                </div>
-                                <div class="block">
-                                    <p>Повторите пароль:</p>
-                                    <input class="col-10" type="password" placeholder="">
-                                </div>
-                                <div class="row submit">
-                                    <div class="col-11 d-flex align-items-center">
-                                        <button class="btn btnBlue">Изменить пароль</button>
-                                        <p class="ml-4 done">Пароль успешно изменён</p>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu hovers">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="passport">
-                    <h5 class="h5">
-                        Добавить паспортные данные:
-                    </h5>
-                    <form action="">
-                        <div class="row inputs d-flex flex-wrap">
-                            <div class="col-4">
-                                <div class="block">
-                                    <p>Серия / Номер:</p>
-                                    <input class="w-100" type="text" placeholder="1515 123456">
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Субсидии</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="block">
-                                    <p>Дата выдачи:</p>
-                                    <input class="w-100" type="text" placeholder="11.11.2011">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="block">
-                                    <p>Кем выдан:</p>
-                                    <input class="w-100" type="text" placeholder="УМВД">
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="block">
-                                    <p>Доп. поле:</p>
-                                    <input class="w-100" type="text" placeholder="1515 123456">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row submit">
-                            <div class="col-6 d-flex align-items-center">
-                                <button class="btn btnBlue">Добавить</button>
-                                <p class="ml-4 done">Данные успешно добавлены</p>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="yourPasport">
-                        <div class="card d-flex flex-row">
-                            <img class="card-img-left" src="assets/img/passportImg.png" alt="">
-                            <div class="card-body">
-                                <h5>Паспорт <br>
-                                    <p>Алексей Волков</p>
-                                </h5>
-                                <div class="buttons d-flex">
-                                    <a href="#" class="edit"><img src="assets/img/editImg.png" alt="">Изменить</a>
-                                    <a href="#" class="delete ml-3"><img src="assets/img/deleteImg.png"
-                                            alt="">Удалить</a>
-                                </div>
-                            </div>
+                        </a>
+                        <div class="dropdown-menu hovers">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div class="discharges">
-                    <h5 class="h5">Заказанные выписки:</h5>
-                    <div class="discharge d-flex">
-                        <i class="fa fa-check"></i>
-                        <div class="body ml-4">
-                            <h6>Семья / Выдача удостоверения многодетной семьи</h6>
-                            <div class="d-flex">
-                                <div class="card d-flex flex-row">
-                                    <img src="assets/img/pdfImg.png" alt="" class="card-img-left">
-                                    <div class="card-body justify-content-center d-flex flex-column">
-                                        <p class="m-0">PDF</p>
-                                        <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
-                                    </div>
-                                </div>
-                                <div class="card d-flex flex-row">
-                                    <img src="assets/img/docImg.png" alt="" class="card-img-left">
-                                    <div class="card-body justify-content-center d-flex flex-column">
-                                        <p class="m-0">Word</p>
-                                        <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
-                                    </div>
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Льготы</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
                                 </div>
                             </div>
+                        </a>
+                        <div class="dropdown-menu hovers">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
                         </div>
                     </div>
-                    <div class="discharge d-flex">
-                        <i class="fa fa-check"></i>
-                        <div class="body ml-4">
-                            <h6>Семья / Выдача удостоверения многодетной семьи</h6>
-                            <div class="d-flex">
-                                <div class="card d-flex flex-row">
-                                    <img src="assets/img/pdfImg.png" alt="" class="card-img-left">
-                                    <div class="card-body justify-content-center d-flex flex-column">
-                                        <p class="m-0">PDF</p>
-                                        <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
-                                    </div>
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Социальная помощь в натуральной форме</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
                                 </div>
-                                <div class="card d-flex flex-row">
-                                    <img src="assets/img/docImg.png" alt="" class="card-img-left">
-                                    <div class="card-body justify-content-center d-flex flex-column">
-                                        <p class="m-0">Word</p>
-                                        <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu hovers">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
+                        </div>
+                    </div>
+                    <div class="myCard">
+                        <a class="dropdown-toggle ml-3" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="card-title">Дополнительные меры социальной поддержки семей с детьми</h5>
+                                    <i class="fas fa-chevron-up ml-2"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu hovers">
+                            <h5>Пособие по беременности и родам</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины при усыновлении(имя ребенка) до трех
+                                        месяцев</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.8 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях
+                                        гражданам, имеющим детей”</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Порядок расчета: </b>устанавливается в размере денежного
+                                        довольствия в зависимости от
+                                        категорий получателей (работающие, неработающие, студенты, военнослужащие).</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>100 000 ₽</span></p>
+                            <hr>
+                            <h5>Единовременное пособие женщинам, вставшим на учет в медицинских организациях в ранние
+                                сроки беременности</h5>
+                            <ul class="m-0 p-0">
+                                <li>
+                                    <p class="gray"><b>Кому положено: </b>Женщины, проходящие военную службу по
+                                        контракту, службу в качестве лиц рядового и начальствующего состава в органах
+                                        внутренних дел, в Государственной противопожарной службе, в учреждениях и
+                                        органах уголовно-исполнительной системы, в органах по контролю за оборотом
+                                        наркотических средств и психотропных веществ, в таможенных органах</p>
+                                </li>
+                                <li>
+                                    <p class="gray"><b>Закон: </b>ст.10 Федерального закона от19.05.1995 N81-ФЗ “О
+                                        государственных пособиях гражданам, имеющим детей”</p>
+                                </li>
+                            </ul>
+                            <p class="summ">Сумма: <span>675 015 ₽</span></p>
+                        </div>
+                    </div>
+
+                    <div class="bottomThanCard d-flex justify-content-between align-content-center">
+                        <div class="discharge d-flex">
+                            <div class="body ml-4">
+                                <div class="d-flex">
+                                    <div class="card d-flex flex-row">
+                                        <img src="assets/img/pdfImg.png" alt="" class="card-img-left">
+                                        <div class="card-body justify-content-center d-flex flex-column">
+                                            <p class="m-0">PDF</p>
+                                            <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
+                                        </div>
+                                    </div>
+                                    <div class="card d-flex flex-row">
+                                        <img src="assets/img/docImg.png" alt="" class="card-img-left">
+                                        <div class="card-body justify-content-center d-flex flex-column">
+                                            <p class="m-0">Word</p>
+                                            <a href="#"><img class="mr-2" src="assets/img/download.png" alt="">Скачать</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="btn btnBlue" style="height: fit-content;">Начать тест заново</button>
                     </div>
                 </div>
             </div>
+
+            <section id="popularNews" class="newsResult">
+                <div class="container">
+                    <div>
+                        <p class="active right-70 mb-0">Статьи по теме</p>
+                        <p class="new mb-0">Семья / Выдача удостоверения многодетной семьи</p>
+                    </div>
+
+                    <div class="groupCard">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle1.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="far fa-heart mr-1"></i>Семья</p>
+                                            <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle5.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="far fa-star mr-1"></i>Военнослужащие
+                                            </p>
+                                            <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle2.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="fas fa-walking mr-1"></i>Иное</p>
+                                            <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle6.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="fas fa-glasses mr-1"></i>Пенсионеры
+                                            </p>
+                                            <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle3.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="far fa-heart mr-1"></i>Семья</p>
+                                            <h6>Обслуживание единых транспортных карт Стрелка</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle7.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="fas fa-wheelchair mr-1"></i>Инвалиды
+                                            </p>
+                                            <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle4.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="fas fa-glasses mr-1"></i>Пенсионеры
+                                            </p>
+                                            <h6>Назначение ежемесячной денежной выплаты на питание</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card">
+                                    <div class="d-flex">
+                                        <img class="card-img-left" src="assets/img/newsArticle8.png" alt="">
+                                        <div class="card-body">
+                                            <p class="category"><i class="far fa-star mr-1"></i>Военнослужащие
+                                            </p>
+                                            <h6>Информация о стимулирующих выплатах медицинским работникам</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
+        
 
         <footer>
             <div class="container">

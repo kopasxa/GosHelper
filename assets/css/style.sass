@@ -615,42 +615,48 @@ footer
                 .card:hover 
                     transform: scale(1)
                     color: none
-    #popularNews 
-        margin-top: 120px
-        min-height: 927px
-        .right-70 
-            margin-right: 70px
-        p.active 
-            color: rgba(29, 32, 61, 1)
-            font-size: 36px 
-            font-weight: bold
-            cursor: pointer
-        p.new
-            color: rgba(138, 142, 171, 1)
-            font-size: 20px 
-            font-weight: bold
-            padding-bottom: 5px
-            cursor: pointer
-        .groupCard 
-            .card 
-                margin-top: 30px
-                text-decoration: none
-                border: none 
-                max-height: 130px
-                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
-                border-radius: 8px
-                .card-img-left 
-                    object-fit: contain
-                    height: 130px
-                .card-body 
-                    .category 
-                        color: rgba(138, 142, 171, 1)
-                    h6 
-                        color: rgba(29, 32, 61, 1)
-                        font-size: 20px
-                        font-weight: bold
-            .card:hover 
-                transform: scale(1)
+    
+#popularNews 
+    margin-top: 120px
+    .right-70 
+        margin-right: 70px
+    p.active 
+        color: rgba(29, 32, 61, 1)
+        font-size: 36px 
+        font-weight: bold
+        cursor: pointer
+    p.new
+        color: rgba(138, 142, 171, 1)
+        font-size: 20px 
+        font-weight: bold
+        padding-bottom: 5px
+        cursor: pointer
+    .groupCard 
+        .card 
+            margin-top: 30px
+            text-decoration: none
+            border: none 
+            max-height: 130px
+            box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+            border-radius: 8px
+            .card-img-left 
+                object-fit: contain
+                height: 130px
+            .card-body 
+                .category 
+                    color: rgba(138, 142, 171, 1)
+                h6 
+                    color: rgba(29, 32, 61, 1)
+                    font-size: 20px
+                    font-weight: bold
+        .card:hover 
+            transform: none
+
+.newsResult 
+    background: url("../img/bgResult.png") 0 0 no-repeat
+    padding-top: 220px
+    padding-bottom: 200px
+
 .top-60 
     margin-top: 60px
 
@@ -1138,8 +1144,9 @@ button.btnBlue
             margin-top: 20px
 
 #page404 
+    background: url("../img/bg404.png") 121px 190px no-repeat
     .main 
-        margin-top: 126px
+        margin-top: 139px
     h1  
         font-size: 36px 
         font-weight: bold 
@@ -1147,6 +1154,108 @@ button.btnBlue
         margin-bottom: 50px
         margin-top: 70px
 
+#result 
+    h2 
+        font-weight: bold
+        font-size: 36px
+        color: rgba(29, 32, 61, 1)
+        margin-top: 70px
+        margin-bottom: 40px
+    .groupCard  
+        .myCard 
+            .shows 
+                display: none
+            .dropdown-toggle[aria-expanded="true"] + .shows 
+                display: block
+            .dropdown-toggle 
+                .card 
+                    box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                    border-radius: 8px
+                    padding: 25px 20px
+                    z-index: 2
+                    &:hover 
+                        transform: none
+                    .card-body 
+                        display: flex
+                        align-items: center
+                        color: rgba(29, 32, 61, 1)
+                        h5 
+                            font-weight: bold 
+                            font-size: 20px
+                            margin-bottom: 0
+                            max-width: 85%
+                            transition: .2s linear
+                        i 
+                            font-weight: bold 
+                            color: rgba(90, 89, 112, 1)
+                            font-size: 20px
+                            transform: rotate(180deg)
+                            transition: .2s linear
+                &[aria-expanded="true"]
+                    .card 
+                        .card-body
+                            h5 
+                                color: rgba(63, 128, 236, 1)
+                            i 
+                                transform: none
+                &:after 
+                    display: none
+            .dropdown-menu 
+                position: relative !important
+                transform: none !important
+                float: none !important
+                z-index: auto
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 0px 0px 8px 8px
+                border: none
+                padding: 40px
+                will-change: auto !important
+                .gray
+                    color: rgba(90, 89, 112, 1)
+                h5 
+                    font-size: 20px 
+                    font-weight: bold
+                    color: rgba(29, 32, 61, 1)
+                ul
+                    li 
+                        display: flex
+                        margin-top: 15px
+                        b 
+                            margin-right: 7px
+                            color: rgba(29, 32, 61, 1)
+                .summ 
+                    font-weight: bold
+                    font-size: 20px
+                    color: rgba(29, 32, 61, 1)
+                    margin-top: 20px
+        .hovers 
+            &:after
+                display: none
+            &:before 
+                content: ''
+                z-index: -10
+                position: absolute
+                top: 15px
+                height: -webkit-fill-available
+                background: #3f80ec
+                border-radius: 0 0 8px 8px
+                width: 95% !important
+                transform: translate(-1.5%) !important
+    .bottomThanCard
+        margin-top: 60px
+        .discharge 
+            img 
+                object-fit: contain
+            .card 
+                .card-body 
+                    p 
+                        color: rgba(90, 89, 112, 1)
+                        font-weight: bold
+                    a 
+                        color: rgba(63, 128, 236, 1) 
+                        text-decoration: underline
+                        margin-left: 8px
+    
 /** Modals **/ 
 
 .modal
