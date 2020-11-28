@@ -74,9 +74,9 @@ body
 
 #firstScreens
     background: url("../img/bgMainPageScreen1-2.png")
-    min-height: 1850px
+    height: 1847px
     #first 
-        min-height: 831px
+        background: url("../img/imgMainPageScreen1.png") 80% 200px no-repeat
         .btnSign 
             width: 135px
             height: 54px
@@ -85,13 +85,11 @@ body
             color: white
             font-weight: bold
         .container 
-            position: relative
-        .imgScreen1 
-            position: absolute
-            right: -118px
+            position: relative 
+            .row 
+                margin-top: 130px
         .offer 
             color: white
-            margin-top: 130px
             p 
                 font-size: 20px
                 font-family: 'Roboto', sans-serif
@@ -116,7 +114,7 @@ body
                 border-radius: 5px
                 margin-bottom: 30px
     #second 
-        margin-top: 108px
+        margin-top: 250px
         .useful 
             h1 
                 max-width: 490px
@@ -161,11 +159,13 @@ body
                             justify-content: center
 #srceens3-4
     background: url("../img/bgMainPageScreen3-4.png")
-    min-height: 2070px
+    height: 2038px
     #thirty
-        min-height: 1250px
+        margin-top: 125px
+        padding-bottom: 250px
+        .alreadyWorking 
+            margin-top: 220px
         h1 
-            margin-top: 140px
             margin-bottom: 70px
         .groupCard 
             .card 
@@ -182,6 +182,7 @@ body
             .hovers:hover::after
                 width: 80%
     #fourty 
+        height: 688px
         margin-top: 100px
         .leftBlock 
             p 
@@ -205,9 +206,9 @@ body
                     color: rgba(90, 89, 112, 1)
 #screens5-7 
     background: url("../img/bgMainPageScreen5-6-7.png")
-    min-height: 2630px
+    height: 2630px
     #fifth 
-        min-height: 1051px
+        height: 1051px
         margin-top: 120px
         .cardGroup 
             .hovers::after 
@@ -236,6 +237,7 @@ body
                             font-size: 26px
                             font-weight: bold
                             margin: 0
+                            padding: 10px 24px
             .card:hover 
                 .circle 
                     background: rgba(64, 125, 226, 1)
@@ -250,7 +252,7 @@ body
             font-weight: bold
             margin-top: 70px
     #sixth 
-        min-height: 861px
+        height: 861px
         margin-top: 180px
         .btnMorePosts
             padding: 18px 50px
@@ -287,8 +289,6 @@ body
                 top: 20px
 
 .circle 
-    width: 60px
-    height: 60px
     background: rgba(63, 128, 236, 0.05)
     transition: .5s ease-in-out
     border-radius: 50%
@@ -324,7 +324,7 @@ body
                 opacity: 0.7 
                 font-size: 14px
 footer 
-    min-height: 160px
+    height: 160px
     margin-top: 200px
     background-color: rgba(43, 47, 78, 1)
     display: flex
@@ -808,7 +808,7 @@ header.lk
                 p 
                     color: rgba(138, 142, 171, 1)   
                     margin-top: 20px
-    #screen2 
+    #screen2
         h3 
             margin-top: 140px 
             font-size: 36px 
@@ -1161,86 +1161,87 @@ button.btnBlue
         color: rgba(29, 32, 61, 1)
         margin-top: 70px
         margin-bottom: 40px
-    .groupCard  
-        .myCard 
-            .shows 
-                display: none
-            .dropdown-toggle[aria-expanded="true"] + .shows 
-                display: block
-            .dropdown-toggle 
-                .card 
-                    box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
-                    border-radius: 8px
-                    padding: 25px 20px
-                    z-index: 2
-                    &:hover 
-                        transform: none
-                    .card-body 
-                        display: flex
-                        align-items: center
-                        color: rgba(29, 32, 61, 1)
-                        h5 
-                            font-weight: bold 
-                            font-size: 20px
-                            margin-bottom: 0
-                            max-width: 85%
-                            transition: .2s linear
-                        i 
-                            font-weight: bold 
-                            color: rgba(90, 89, 112, 1)
-                            font-size: 20px
-                            transform: rotate(180deg)
-                            transition: .2s linear
-                &[aria-expanded="true"]
-                    .card 
-                        .card-body
-                            h5 
-                                color: rgba(63, 128, 236, 1)
-                            i 
-                                transform: none
-                &:after 
+    .topBlock
+        .groupCard  
+            .myCard 
+                .shows 
                     display: none
-            .dropdown-menu 
-                position: relative !important
-                transform: none !important
-                float: none !important
-                z-index: auto
-                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
-                border-radius: 0px 0px 8px 8px
-                border: none
-                padding: 40px
-                will-change: auto !important
-                .gray
-                    color: rgba(90, 89, 112, 1)
-                h5 
-                    font-size: 20px 
-                    font-weight: bold
-                    color: rgba(29, 32, 61, 1)
-                ul
-                    li 
-                        display: flex
-                        margin-top: 15px
-                        b 
-                            margin-right: 7px
+                .dropdown-toggle[aria-expanded="true"] + .shows 
+                    display: block
+                .dropdown-toggle 
+                    .card 
+                        box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                        border-radius: 8px
+                        padding: 25px 20px
+                        z-index: 2
+                        &:hover 
+                            transform: none
+                        .card-body 
+                            display: flex
+                            align-items: center
                             color: rgba(29, 32, 61, 1)
-                .summ 
-                    font-weight: bold
-                    font-size: 20px
-                    color: rgba(29, 32, 61, 1)
-                    margin-top: 20px
-        .hovers 
-            &:after
-                display: none
-            &:before 
-                content: ''
-                z-index: -10
-                position: absolute
-                top: 15px
-                height: -webkit-fill-available
-                background: #3f80ec
-                border-radius: 0 0 8px 8px
-                width: 95% !important
-                transform: translate(-1.5%) !important
+                            h5 
+                                font-weight: bold 
+                                font-size: 20px
+                                margin-bottom: 0
+                                max-width: 85%
+                                transition: .2s linear
+                            i 
+                                font-weight: bold 
+                                color: rgba(90, 89, 112, 1)
+                                font-size: 20px
+                                transform: rotate(180deg)
+                                transition: .2s linear
+                    &[aria-expanded="true"]
+                        .card 
+                            .card-body
+                                h5 
+                                    color: rgba(63, 128, 236, 1)
+                                i 
+                                    transform: none
+                    &:after 
+                        display: none
+                .dropdown-menu 
+                    position: relative !important
+                    transform: none !important
+                    float: none !important
+                    z-index: auto
+                    box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                    border-radius: 0px 0px 8px 8px
+                    border: none
+                    padding: 40px
+                    will-change: auto !important
+                    .gray
+                        color: rgba(90, 89, 112, 1)
+                    h5 
+                        font-size: 20px 
+                        font-weight: bold
+                        color: rgba(29, 32, 61, 1)
+                    ul
+                        li 
+                            display: flex
+                            margin-top: 15px
+                            b 
+                                margin-right: 7px
+                                color: rgba(29, 32, 61, 1)
+                    .summ 
+                        font-weight: bold
+                        font-size: 20px
+                        color: rgba(29, 32, 61, 1)
+                        margin-top: 20px
+            .hovers 
+                &:after
+                    display: none
+                &:before 
+                    content: ''
+                    z-index: -10
+                    position: absolute
+                    top: 15px
+                    height: -webkit-fill-available
+                    background: #3f80ec
+                    border-radius: 0 0 8px 8px
+                    width: 95% !important
+                    transform: translate(-1.5%) !important
     .bottomThanCard
         margin-top: 60px
         .discharge 
@@ -1255,6 +1256,50 @@ button.btnBlue
                         color: rgba(63, 128, 236, 1) 
                         text-decoration: underline
                         margin-left: 8px
+    #services 
+        margin-top: 120px
+        h4 
+            font-size: 36px 
+            font-weight: bold 
+            color: rgba(29, 32, 61, 1)
+        p 
+            color: rgba(90, 89, 112, 1)
+        ul 
+            list-style: none
+            li 
+                color: rgba(90, 89, 112, 1)
+                i 
+                    color: rgba(63, 128, 236, 1)
+        .groupCard 
+            margin-bottom: 200px
+            .card 
+                box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08)
+                border-radius: 8px
+                .card-body
+                    padding: 40px 65px
+                    img 
+                        object-fit: contain
+                    .cardWrapper 
+                        margin-left: 64px
+                        h4 
+                            color: rgba(29, 32, 61, 1)
+                            font-size: 32px 
+                            transition: .3s linear
+                            font-weight: bold
+                        p 
+                            font-size: 16px 
+                            color: rgba(90, 89, 112, 1)
+                        .bottomBlock 
+                            color: rgba(138, 142, 171, 1) 
+                            font-size: 15px
+                            span 
+                                font-size: 40px 
+                                font-weight: bold
+                                color: rgba(63, 128, 236, 1)
+                &:hover 
+                    .cardWrapper
+                        h4 
+                            color: rgba(63, 128, 236, 1)
     
 /** Modals **/ 
 
@@ -1287,6 +1332,7 @@ button.btnBlue
                         border-radius: 5px
                         border: none
                         padding: 13px 26px
+                        margin-top: 15px
                         color: rgba(90, 89, 112, 1)
                     input.login
                         background-image: url("../img/user.png")

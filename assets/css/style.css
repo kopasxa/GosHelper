@@ -109,11 +109,11 @@ body .btn.focus, body .btn:focus {
 
 #firstScreens {
   background: url("../img/bgMainPageScreen1-2.png");
-  min-height: 1850px;
+  height: 1847px;
 }
 
 #firstScreens #first {
-  min-height: 831px;
+  background: url("../img/imgMainPageScreen1.png") 80% 200px no-repeat;
 }
 
 #firstScreens #first .btnSign {
@@ -129,14 +129,12 @@ body .btn.focus, body .btn:focus {
   position: relative;
 }
 
-#firstScreens #first .imgScreen1 {
-  position: absolute;
-  right: -118px;
+#firstScreens #first .container .row {
+  margin-top: 130px;
 }
 
 #firstScreens #first .offer {
   color: white;
-  margin-top: 130px;
 }
 
 #firstScreens #first .offer p {
@@ -171,7 +169,7 @@ body .btn.focus, body .btn:focus {
 }
 
 #firstScreens #second {
-  margin-top: 108px;
+  margin-top: 250px;
 }
 
 #firstScreens #second .useful h1 {
@@ -248,15 +246,19 @@ body .btn.focus, body .btn:focus {
 
 #srceens3-4 {
   background: url("../img/bgMainPageScreen3-4.png");
-  min-height: 2070px;
+  height: 2038px;
 }
 
 #srceens3-4 #thirty {
-  min-height: 1250px;
+  margin-top: 125px;
+  padding-bottom: 250px;
+}
+
+#srceens3-4 #thirty .alreadyWorking {
+  margin-top: 220px;
 }
 
 #srceens3-4 #thirty h1 {
-  margin-top: 140px;
   margin-bottom: 70px;
 }
 
@@ -285,6 +287,7 @@ body .btn.focus, body .btn:focus {
 }
 
 #srceens3-4 #fourty {
+  height: 688px;
   margin-top: 100px;
 }
 
@@ -319,11 +322,11 @@ body .btn.focus, body .btn:focus {
 
 #screens5-7 {
   background: url("../img/bgMainPageScreen5-6-7.png");
-  min-height: 2630px;
+  height: 2630px;
 }
 
 #screens5-7 #fifth {
-  min-height: 1051px;
+  height: 1051px;
   margin-top: 120px;
 }
 
@@ -368,6 +371,7 @@ body .btn.focus, body .btn:focus {
   font-size: 26px;
   font-weight: bold;
   margin: 0;
+  padding: 10px 24px;
 }
 
 #screens5-7 #fifth .cardGroup .card:hover .circle {
@@ -389,7 +393,7 @@ body .btn.focus, body .btn:focus {
 }
 
 #screens5-7 #sixth {
-  min-height: 861px;
+  height: 861px;
   margin-top: 180px;
 }
 
@@ -443,8 +447,6 @@ body .btn.focus, body .btn:focus {
 }
 
 .circle {
-  width: 60px;
-  height: 60px;
   background: rgba(63, 128, 236, 0.05);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -494,7 +496,7 @@ body .btn.focus, body .btn:focus {
 }
 
 footer {
-  min-height: 160px;
+  height: 160px;
   margin-top: 200px;
   background-color: #2b2f4e;
   display: -webkit-box;
@@ -1771,15 +1773,15 @@ button.btnBlue {
   margin-bottom: 40px;
 }
 
-#result .groupCard .myCard .shows {
+#result .topBlock .groupCard .myCard .shows {
   display: none;
 }
 
-#result .groupCard .myCard .dropdown-toggle[aria-expanded="true"] + .shows {
+#result .topBlock .groupCard .myCard .dropdown-toggle[aria-expanded="true"] + .shows {
   display: block;
 }
 
-#result .groupCard .myCard .dropdown-toggle .card {
+#result .topBlock .groupCard .myCard .dropdown-toggle .card {
   -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
           box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
   border-radius: 8px;
@@ -1787,12 +1789,12 @@ button.btnBlue {
   z-index: 2;
 }
 
-#result .groupCard .myCard .dropdown-toggle .card:hover {
+#result .topBlock .groupCard .myCard .dropdown-toggle .card:hover {
   -webkit-transform: none;
           transform: none;
 }
 
-#result .groupCard .myCard .dropdown-toggle .card .card-body {
+#result .topBlock .groupCard .myCard .dropdown-toggle .card .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1802,7 +1804,7 @@ button.btnBlue {
   color: #1d203d;
 }
 
-#result .groupCard .myCard .dropdown-toggle .card .card-body h5 {
+#result .topBlock .groupCard .myCard .dropdown-toggle .card .card-body h5 {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 0;
@@ -1811,7 +1813,7 @@ button.btnBlue {
   transition: .2s linear;
 }
 
-#result .groupCard .myCard .dropdown-toggle .card .card-body i {
+#result .topBlock .groupCard .myCard .dropdown-toggle .card .card-body i {
   font-weight: bold;
   color: #5a5970;
   font-size: 20px;
@@ -1821,20 +1823,20 @@ button.btnBlue {
   transition: .2s linear;
 }
 
-#result .groupCard .myCard .dropdown-toggle[aria-expanded="true"] .card .card-body h5 {
+#result .topBlock .groupCard .myCard .dropdown-toggle[aria-expanded="true"] .card .card-body h5 {
   color: #3f80ec;
 }
 
-#result .groupCard .myCard .dropdown-toggle[aria-expanded="true"] .card .card-body i {
+#result .topBlock .groupCard .myCard .dropdown-toggle[aria-expanded="true"] .card .card-body i {
   -webkit-transform: none;
           transform: none;
 }
 
-#result .groupCard .myCard .dropdown-toggle:after {
+#result .topBlock .groupCard .myCard .dropdown-toggle:after {
   display: none;
 }
 
-#result .groupCard .myCard .dropdown-menu {
+#result .topBlock .groupCard .myCard .dropdown-menu {
   position: relative !important;
   -webkit-transform: none !important;
           transform: none !important;
@@ -1848,40 +1850,40 @@ button.btnBlue {
   will-change: auto !important;
 }
 
-#result .groupCard .myCard .dropdown-menu .gray {
+#result .topBlock .groupCard .myCard .dropdown-menu .gray {
   color: #5a5970;
 }
 
-#result .groupCard .myCard .dropdown-menu h5 {
+#result .topBlock .groupCard .myCard .dropdown-menu h5 {
   font-size: 20px;
   font-weight: bold;
   color: #1d203d;
 }
 
-#result .groupCard .myCard .dropdown-menu ul li {
+#result .topBlock .groupCard .myCard .dropdown-menu ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
 }
 
-#result .groupCard .myCard .dropdown-menu ul li b {
+#result .topBlock .groupCard .myCard .dropdown-menu ul li b {
   margin-right: 7px;
   color: #1d203d;
 }
 
-#result .groupCard .myCard .dropdown-menu .summ {
+#result .topBlock .groupCard .myCard .dropdown-menu .summ {
   font-weight: bold;
   font-size: 20px;
   color: #1d203d;
   margin-top: 20px;
 }
 
-#result .groupCard .hovers:after {
+#result .topBlock .groupCard .hovers:after {
   display: none;
 }
 
-#result .groupCard .hovers:before {
+#result .topBlock .groupCard .hovers:before {
   content: '';
   z-index: -10;
   position: absolute;
@@ -1912,6 +1914,83 @@ button.btnBlue {
   color: #3f80ec;
   text-decoration: underline;
   margin-left: 8px;
+}
+
+#result #services {
+  margin-top: 120px;
+}
+
+#result #services h4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1d203d;
+}
+
+#result #services p {
+  color: #5a5970;
+}
+
+#result #services ul {
+  list-style: none;
+}
+
+#result #services ul li {
+  color: #5a5970;
+}
+
+#result #services ul li i {
+  color: #3f80ec;
+}
+
+#result #services .groupCard {
+  margin-bottom: 200px;
+}
+
+#result #services .groupCard .card {
+  -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+          box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
+  border-radius: 8px;
+}
+
+#result #services .groupCard .card .card-body {
+  padding: 40px 65px;
+}
+
+#result #services .groupCard .card .card-body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#result #services .groupCard .card .card-body .cardWrapper {
+  margin-left: 64px;
+}
+
+#result #services .groupCard .card .card-body .cardWrapper h4 {
+  color: #1d203d;
+  font-size: 32px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-weight: bold;
+}
+
+#result #services .groupCard .card .card-body .cardWrapper p {
+  font-size: 16px;
+  color: #5a5970;
+}
+
+#result #services .groupCard .card .card-body .cardWrapper .bottomBlock {
+  color: #8a8eab;
+  font-size: 15px;
+}
+
+#result #services .groupCard .card .card-body .cardWrapper .bottomBlock span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3f80ec;
+}
+
+#result #services .groupCard .card:hover .cardWrapper h4 {
+  color: #3f80ec;
 }
 
 /** Modals **/
@@ -1955,6 +2034,7 @@ button.btnBlue {
   border-radius: 5px;
   border: none;
   padding: 13px 26px;
+  margin-top: 15px;
   color: #5a5970;
 }
 
