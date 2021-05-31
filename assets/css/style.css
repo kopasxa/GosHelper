@@ -454,6 +454,8 @@ body .btn.focus, body .btn:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 60px;
+  height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2011,7 +2013,7 @@ button.btnBlue {
   -webkit-box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
           box-shadow: 4px 10px 40px rgba(23, 76, 154, 0.08);
   border-radius: 16px;
-  padding: 80px 125px;
+  padding: 55px 100px;
 }
 
 .modal .modal-dialog .modal-content .modal-body .loc h5 {
@@ -2185,6 +2187,10 @@ button.btnBlue {
   border-bottom: 1px solid rgba(138, 142, 171, 0.3);
 }
 
+.modal .modal-dialog .modal-footer .soc a {
+  margin-left: 20px;
+}
+
 .modal .modal-dialog .modal-footer p {
   font-size: 15px;
   color: #5A5970;
@@ -2193,7 +2199,7 @@ button.btnBlue {
 .modal .modal-dialog .modal-footer p a {
   color: #3f80ec;
   text-decoration: underline;
-  margin-left: 3px;
+  margin-left: 10px;
   font-weight: bold;
   cursor: pointer;
 }
